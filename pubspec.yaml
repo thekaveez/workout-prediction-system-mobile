@@ -39,9 +39,9 @@ dependencies:
   flutter_svg: ^2.0.17
   flutter_native_splash: ^2.4.4
   smooth_page_indicator: ^1.2.1
-  # BLoC for state management
-  bloc: ^8.1.2
-  flutter_bloc: ^8.1.3
+  # Riverpod for state management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
   equatable: ^2.0.5
   intl: ^0.19.0 # For date formatting
   firebase_core: ^2.25.4 # Firebase Core
@@ -61,6 +61,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.7
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

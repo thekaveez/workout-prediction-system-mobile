@@ -1,69 +1,61 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
-import 'package:workout_prediction_system_mobile/features/auth/bloc/auth_bloc.dart';
-import 'package:workout_prediction_system_mobile/features/auth/repository/auth_repository.dart';
-import 'package:workout_prediction_system_mobile/features/home/bloc/home_bloc.dart';
-import 'package:workout_prediction_system_mobile/features/home/bloc/home_event.dart';
-import 'package:workout_prediction_system_mobile/features/home/bloc/home_state.dart';
+import 'package:workout_prediction_system_mobile/features/home/providers/home_provider.dart';
 import 'package:workout_prediction_system_mobile/features/home/widgets/daily_summary_card.dart';
 import 'package:workout_prediction_system_mobile/features/home/widgets/health_tip_card.dart';
 import 'package:workout_prediction_system_mobile/features/home/widgets/meal_plan_section.dart';
 import 'package:workout_prediction_system_mobile/features/home/widgets/quick_actions.dart';
 import 'package:workout_prediction_system_mobile/features/profile/screens/profile_screen.dart';
-import 'package:workout_prediction_system_mobile/features/profile/widgets/profile_provider.dart';
 import 'package:workout_prediction_system_mobile/utils/text_utils.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return BlocProvider(
-      create:
-          (context) => HomeBloc(
-            authBloc: BlocProvider.of<AuthBloc>(context),
-            authRepository: RepositoryProvider.of<AuthRepository>(context),
-          )..add(const HomeInitialLoadEvent()),
-      child: const HomeScreenContent(),
-    );
-  }
+  ConsumerState<HomeScreen> createState() => _HomeScreenState();
 }
 
-class HomeScreenContent extends StatelessWidget {
-  const HomeScreenContent({super.key});
+class _HomeScreenState extends ConsumerState<HomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+    // Initialize data when widget is first created
+    Future.microtask(() => ref.read(homeProvider.notifier).initialLoad());
+  }
 
   void _navigateToProfile(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => const ProfileProvider(child: ProfileScreen()),
-      ),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (context) => const ProfileScreen()));
   }
 
   @override
   Widget build(BuildContext context) {
+    final homeState = ref.watch(homeProvider);
+
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: SafeArea(
-        child: BlocBuilder<HomeBloc, HomeState>(
-          builder: (context, state) {
-            if (state is HomeInitialState || state is HomeLoadingState) {
+        child: Builder(
+          builder: (context) {
+            if (homeState.status == HomeStatus.initial ||
+                homeState.status == HomeStatus.loading) {
               return const Center(
                 child: CircularProgressIndicator(color: Color(0xFF00C896)),
               );
-            } else if (state is HomeLoadedState) {
+            } else if (homeState.status == HomeStatus.loaded) {
               return RefreshIndicator(
                 color: const Color(0xFF00C896),
                 onRefresh: () async {
-                  context.read<HomeBloc>().add(const HomeRefreshDataEvent());
+                  ref.read(homeProvider.notifier).refreshData();
                   // Wait for refresh to complete
                   await Future.delayed(const Duration(milliseconds: 800));
                 },
-                child: _buildHomeContent(context, state),
+                child: _buildHomeContent(context, homeState),
               );
-            } else if (state is HomeErrorState) {
+            } else if (homeState.status == HomeStatus.error) {
               return Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -75,16 +67,14 @@ class HomeScreenContent extends StatelessWidget {
                     ),
                     SizedBox(height: 16.h),
                     Text(
-                      'Error: ${state.message}',
+                      'Error: ${homeState.errorMessage}',
                       style: TextUtils.kBodyText(context),
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 24.h),
                     ElevatedButton(
                       onPressed: () {
-                        context.read<HomeBloc>().add(
-                          const HomeInitialLoadEvent(),
-                        );
+                        ref.read(homeProvider.notifier).initialLoad();
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF00C896),
@@ -128,7 +118,7 @@ class HomeScreenContent extends StatelessWidget {
     );
   }
 
-  Widget _buildHomeContent(BuildContext context, HomeLoadedState state) {
+  Widget _buildHomeContent(BuildContext context, HomeState state) {
     // Format the date string (e.g., "Today - Apr 6")
     final dateFormat = DateFormat('MMM d');
     final formattedDate = 'Today – ${dateFormat.format(state.date)}';
@@ -139,18 +129,18 @@ class HomeScreenContent extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           // App Bar / Header
-          _buildHeader(context, state.username, formattedDate),
+          _buildHeader(context, state.username, formattedDate, state.photoUrl),
 
           SizedBox(height: 24.h),
 
           // Daily Summary Cards
-          DailySummaryList(dailySummary: state.dailySummary),
+          DailySummaryList(dailySummary: state.dailySummary!),
 
           SizedBox(height: 32.h),
 
           // Meal Plan Section
           MealPlanSection(
-            mealPlan: state.mealPlan,
+            mealPlan: state.mealPlan!,
             isGeneratingNewPlan: state.isGeneratingNewMealPlan,
           ),
 
@@ -162,7 +152,7 @@ class HomeScreenContent extends StatelessWidget {
           SizedBox(height: 32.h),
 
           // Health Tips
-          HealthTipsSection(tips: state.healthTips),
+          HealthTipsSection(tips: state.healthTips!),
 
           SizedBox(height: 32.h),
         ],
@@ -174,11 +164,8 @@ class HomeScreenContent extends StatelessWidget {
     BuildContext context,
     String username,
     String dateString,
+    String? photoUrl,
   ) {
-    // Get the photoUrl from the HomeBloc state
-    final state = context.read<HomeBloc>().state;
-    final String? photoUrl = state is HomeLoadedState ? state.photoUrl : null;
-
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
       child: Row(

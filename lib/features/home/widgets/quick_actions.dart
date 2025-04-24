@@ -1,53 +1,67 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:workout_prediction_system_mobile/features/home/bloc/home_bloc.dart';
-import 'package:workout_prediction_system_mobile/features/home/bloc/home_event.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:workout_prediction_system_mobile/features/home/providers/home_provider.dart';
 import 'package:workout_prediction_system_mobile/utils/text_utils.dart';
 
 class QuickActionItem {
   final String title;
   final IconData icon;
   final Color accentColor;
-  final HomeEvent event;
+  final void Function(WidgetRef ref) onAction;
 
   QuickActionItem({
     required this.title,
     required this.icon,
     required this.accentColor,
-    required this.event,
+    required this.onAction,
   });
 }
 
-class QuickActions extends StatelessWidget {
+class QuickActions extends ConsumerWidget {
   const QuickActions({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final List<QuickActionItem> actions = [
       QuickActionItem(
         title: 'Log Meal',
         icon: Icons.restaurant_menu,
         accentColor: const Color(0xFF00C896),
-        event: const LogMealEvent(),
+        onAction: (_) {
+          // In a real app, this would navigate to a meal logging screen
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Log Meal feature coming soon!')),
+          );
+        },
       ),
       QuickActionItem(
         title: 'Add Activity',
         icon: Icons.fitness_center,
         accentColor: const Color(0xFF4ECDC4),
-        event: const AddActivityEvent(),
+        onAction: (_) {
+          // In a real app, this would navigate to an activity logging screen
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Add Activity feature coming soon!')),
+          );
+        },
       ),
       QuickActionItem(
         title: 'View Progress',
         icon: Icons.bar_chart,
         accentColor: const Color(0xFFFF6B6B),
-        event: const ViewProgressEvent(),
+        onAction: (_) {
+          // In a real app, this would navigate to a progress tracking screen
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('View Progress feature coming soon!')),
+          );
+        },
       ),
       QuickActionItem(
         title: 'AI Suggestion',
         icon: Icons.lightbulb_outline,
         accentColor: const Color(0xFFFFD166),
-        event: const HomeRefreshDataEvent(),
+        onAction: (ref) => ref.read(homeProvider.notifier).refreshData(),
       ),
     ];
 
@@ -70,7 +84,7 @@ class QuickActions extends StatelessWidget {
               itemCount: actions.length,
               itemBuilder: (context, index) {
                 final action = actions[index];
-                return _buildQuickActionCard(context, action);
+                return _buildQuickActionCard(context, action, ref);
               },
             ),
           ),
@@ -79,9 +93,13 @@ class QuickActions extends StatelessWidget {
     );
   }
 
-  Widget _buildQuickActionCard(BuildContext context, QuickActionItem action) {
+  Widget _buildQuickActionCard(
+    BuildContext context,
+    QuickActionItem action,
+    WidgetRef ref,
+  ) {
     return GestureDetector(
-      onTap: () => context.read<HomeBloc>().add(action.event),
+      onTap: () => action.onAction(ref),
       child: Container(
         width: 110.w,
         margin: EdgeInsets.only(right: 16.w),

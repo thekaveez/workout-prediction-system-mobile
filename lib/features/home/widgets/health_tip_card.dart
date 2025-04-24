@@ -41,7 +41,11 @@ class HealthTipCard extends StatelessWidget {
                   color: const Color(0xFF00C896).withOpacity(0.2),
                   shape: BoxShape.circle,
                 ),
-                child: Text(tip.icon, style: TextStyle(fontSize: 16.sp)),
+                child: Icon(
+                  _getIconData(tip.icon),
+                  color: const Color(0xFF00C896),
+                  size: 16.sp,
+                ),
               ),
               SizedBox(width: 12.w),
               Expanded(
@@ -74,6 +78,19 @@ class HealthTipCard extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  IconData _getIconData(String iconName) {
+    switch (iconName) {
+      case 'water_drop':
+        return Icons.water_drop;
+      case 'fitness_center':
+        return Icons.fitness_center;
+      case 'restaurant':
+        return Icons.restaurant;
+      default:
+        return Icons.lightbulb_outline;
+    }
   }
 }
 

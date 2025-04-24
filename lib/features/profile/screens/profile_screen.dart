@@ -1,21 +1,18 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:workout_prediction_system_mobile/features/auth/bloc/auth_bloc.dart';
-import 'package:workout_prediction_system_mobile/features/auth/bloc/auth_event.dart';
-import 'package:workout_prediction_system_mobile/features/profile/bloc/profile_bloc.dart';
-import 'package:workout_prediction_system_mobile/features/profile/bloc/profile_event.dart';
-import 'package:workout_prediction_system_mobile/features/profile/bloc/profile_state.dart';
+import 'package:workout_prediction_system_mobile/features/auth/providers/auth_provider.dart';
+import 'package:workout_prediction_system_mobile/features/profile/providers/profile_provider.dart';
 
-class ProfileScreen extends StatefulWidget {
+class ProfileScreen extends ConsumerStatefulWidget {
   const ProfileScreen({super.key});
 
   @override
-  State<ProfileScreen> createState() => _ProfileScreenState();
+  ConsumerState<ProfileScreen> createState() => _ProfileScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _ProfileScreenState extends ConsumerState<ProfileScreen> {
   final _nameController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   bool _isEditing = false;
@@ -28,102 +25,97 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ProfileBloc, ProfileState>(
-      builder: (context, state) {
-        if (state.isLoading) {
-          return Scaffold(
-            appBar: AppBar(title: const Text('Profile')),
-            body: const Center(child: CircularProgressIndicator()),
-          );
-        }
+    final profileState = ref.watch(profileProvider);
 
-        final user = state.user;
-        if (user == null) {
-          // If user is null after loading, redirect to login
-          return Scaffold(
-            appBar: AppBar(title: const Text('Profile')),
-            body: const Center(child: Text('User not found')),
-          );
-        }
+    if (profileState.status == ProfileStatus.loading) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('Profile')),
+        body: const Center(child: CircularProgressIndicator()),
+      );
+    }
 
-        // Set the initial value for name controller when not editing
-        if (!_isEditing) {
-          _nameController.text = user.name ?? '';
-        }
+    final user = profileState.user;
+    if (user == null) {
+      // If user is null after loading, redirect to login
+      return Scaffold(
+        appBar: AppBar(title: const Text('Profile')),
+        body: const Center(child: Text('User not found')),
+      );
+    }
 
-        return Scaffold(
-          appBar: AppBar(
-            title: const Text('Profile'),
-            actions: [
-              IconButton(
-                icon: Icon(_isEditing ? Icons.check : Icons.edit),
-                onPressed: () {
-                  if (_isEditing) {
-                    // Save changes
-                    if (_formKey.currentState!.validate()) {
-                      context.read<ProfileBloc>().add(
-                        ProfileUpdateRequested(
-                          userId: user.id,
-                          name: _nameController.text,
-                        ),
+    // Set the initial value for name controller when not editing
+    if (!_isEditing) {
+      _nameController.text = user.name ?? '';
+    }
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Profile'),
+        actions: [
+          IconButton(
+            icon: Icon(_isEditing ? Icons.check : Icons.edit),
+            onPressed: () {
+              if (_isEditing) {
+                // Save changes
+                if (_formKey.currentState!.validate()) {
+                  ref
+                      .read(profileProvider.notifier)
+                      .updateProfile(
+                        userId: user.id,
+                        name: _nameController.text,
                       );
-                      setState(() {
-                        _isEditing = false;
-                      });
-                    }
-                  } else {
-                    // Enter edit mode
-                    setState(() {
-                      _isEditing = true;
-                    });
-                  }
+                  setState(() {
+                    _isEditing = false;
+                  });
+                }
+              } else {
+                // Enter edit mode
+                setState(() {
+                  _isEditing = true;
+                });
+              }
+            },
+          ),
+        ],
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16.0),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              // Profile picture with upload option
+              _buildProfilePicture(context, profileState),
+              const SizedBox(height: 24),
+
+              // User details section
+              _buildUserDetailsSection(context, profileState, user),
+              const SizedBox(height: 32),
+
+              // Logout button
+              ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                  foregroundColor: Colors.white,
+                  minimumSize: const Size(double.infinity, 50),
+                ),
+                icon: const Icon(Icons.logout),
+                label: const Text('Logout'),
+                onPressed: () {
+                  // Sign out using profile provider
+                  ref.read(profileProvider.notifier).signOut();
+
+                  // Navigate back to the login page and clear all routes
+                  Navigator.of(
+                    context,
+                  ).pushNamedAndRemoveUntil('/', (route) => false);
                 },
               ),
             ],
           ),
-          body: SingleChildScrollView(
-            padding: const EdgeInsets.all(16.0),
-            child: Form(
-              key: _formKey,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  // Profile picture with upload option
-                  _buildProfilePicture(context, state),
-                  const SizedBox(height: 24),
-
-                  // User details section
-                  _buildUserDetailsSection(context, state, user),
-                  const SizedBox(height: 32),
-
-                  // Logout button
-                  ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.red,
-                      foregroundColor: Colors.white,
-                      minimumSize: const Size(double.infinity, 50),
-                    ),
-                    icon: const Icon(Icons.logout),
-                    label: const Text('Logout'),
-                    onPressed: () {
-                      // Add logout events to both blocs
-                      context.read<ProfileBloc>().add(
-                        ProfileSignOutRequested(),
-                      );
-                      context.read<AuthBloc>().add(AuthSignOutRequested());
-
-                      // Navigate back to the login page and clear all routes
-                      Navigator.of(
-                        context,
-                      ).pushNamedAndRemoveUntil('/', (route) => false);
-                    },
-                  ),
-                ],
-              ),
-            ),
-          ),
-        );
-      },
+        ),
+      ),
     );
   }
 
@@ -240,36 +232,28 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Future<void> _showImagePicker(BuildContext context) async {
-    final user = context.read<ProfileBloc>().state.user;
+    final user = ref.read(profileProvider).user;
     if (user == null) return;
-
-    // Capture the ProfileBloc reference before opening the bottom sheet
-    final profileBloc = context.read<ProfileBloc>();
 
     final ImagePicker picker = ImagePicker();
     showModalBottomSheet(
       context: context,
-      builder: (BuildContext bottomSheetContext) {
+      builder: (BuildContext context) {
         return SafeArea(
           child: Wrap(
-            children: <Widget>[
+            children: [
               ListTile(
                 leading: const Icon(Icons.photo_library),
                 title: const Text('Gallery'),
                 onTap: () async {
-                  Navigator.of(bottomSheetContext).pop();
+                  Navigator.pop(context);
                   final XFile? image = await picker.pickImage(
                     source: ImageSource.gallery,
-                    imageQuality: 70,
                   );
                   if (image != null) {
-                    // Use the captured profileBloc instead of looking it up from context
-                    profileBloc.add(
-                      ProfileUploadPhotoRequested(
-                        userId: user.id,
-                        photoPath: image.path,
-                      ),
-                    );
+                    ref
+                        .read(profileProvider.notifier)
+                        .uploadProfilePhoto(user.id, image.path);
                   }
                 },
               ),
@@ -277,19 +261,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 leading: const Icon(Icons.photo_camera),
                 title: const Text('Camera'),
                 onTap: () async {
-                  Navigator.of(bottomSheetContext).pop();
+                  Navigator.pop(context);
                   final XFile? image = await picker.pickImage(
                     source: ImageSource.camera,
-                    imageQuality: 70,
                   );
                   if (image != null) {
-                    // Use the captured profileBloc instead of looking it up from context
-                    profileBloc.add(
-                      ProfileUploadPhotoRequested(
-                        userId: user.id,
-                        photoPath: image.path,
-                      ),
-                    );
+                    ref
+                        .read(profileProvider.notifier)
+                        .uploadProfilePhoto(user.id, image.path);
                   }
                 },
               ),

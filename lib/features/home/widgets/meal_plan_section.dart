@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:workout_prediction_system_mobile/features/home/bloc/home_bloc.dart';
-import 'package:workout_prediction_system_mobile/features/home/bloc/home_event.dart';
 import 'package:workout_prediction_system_mobile/features/home/models/meal_plan.dart';
+import 'package:workout_prediction_system_mobile/features/home/providers/home_provider.dart';
 import 'package:workout_prediction_system_mobile/utils/text_utils.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
-class MealPlanSection extends StatelessWidget {
+class MealPlanSection extends ConsumerWidget {
   final MealPlan mealPlan;
   final bool isGeneratingNewPlan;
 
@@ -17,7 +16,7 @@ class MealPlanSection extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 16.w),
       child: Column(
@@ -41,9 +40,10 @@ class MealPlanSection extends StatelessWidget {
                 onPressed:
                     isGeneratingNewPlan
                         ? null
-                        : () => context.read<HomeBloc>().add(
-                          const GenerateNewMealPlanEvent(),
-                        ),
+                        : () =>
+                            ref
+                                .read(homeProvider.notifier)
+                                .generateNewMealPlan(),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF00C896),
                   foregroundColor: Colors.white,
@@ -80,25 +80,23 @@ class MealPlanSection extends StatelessWidget {
             context,
             'Breakfast',
             mealPlan.breakfast,
-            () => context.read<HomeBloc>().add(
-              const SwapMealEvent(mealType: 'breakfast'),
-            ),
+            () =>
+                ref.read(homeProvider.notifier).swapMeal(mealType: 'breakfast'),
+            ref,
           ),
           _buildMealItem(
             context,
             'Lunch',
             mealPlan.lunch,
-            () => context.read<HomeBloc>().add(
-              const SwapMealEvent(mealType: 'lunch'),
-            ),
+            () => ref.read(homeProvider.notifier).swapMeal(mealType: 'lunch'),
+            ref,
           ),
           _buildMealItem(
             context,
             'Dinner',
             mealPlan.dinner,
-            () => context.read<HomeBloc>().add(
-              const SwapMealEvent(mealType: 'dinner'),
-            ),
+            () => ref.read(homeProvider.notifier).swapMeal(mealType: 'dinner'),
+            ref,
           ),
           if (mealPlan.snacks.isNotEmpty) ...[
             SizedBox(height: 8.h),
@@ -116,9 +114,10 @@ class MealPlanSection extends StatelessWidget {
                 context,
                 'Snack ${entry.key + 1}',
                 entry.value,
-                () => context.read<HomeBloc>().add(
-                  SwapMealEvent(mealType: 'snack', snackIndex: entry.key),
-                ),
+                () => ref
+                    .read(homeProvider.notifier)
+                    .swapMeal(mealType: 'snack', snackIndex: entry.key),
+                ref,
                 isSnack: true,
               );
             }).toList(),
@@ -132,7 +131,8 @@ class MealPlanSection extends StatelessWidget {
     BuildContext context,
     String title,
     Meal meal,
-    VoidCallback onSwap, {
+    VoidCallback onSwap,
+    WidgetRef ref, {
     bool isSnack = false,
   }) {
     return Container(
@@ -266,8 +266,8 @@ class MealPlanSection extends StatelessWidget {
     );
   }
 
-  IconData _getMealIcon(String mealType) {
-    switch (mealType.toLowerCase()) {
+  IconData _getMealIcon(String title) {
+    switch (title.toLowerCase()) {
       case 'breakfast':
         return Icons.breakfast_dining;
       case 'lunch':
@@ -275,7 +275,7 @@ class MealPlanSection extends StatelessWidget {
       case 'dinner':
         return Icons.dinner_dining;
       default:
-        return Icons.restaurant;
+        return Icons.fastfood;
     }
   }
 }
