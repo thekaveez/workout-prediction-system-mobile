@@ -99,13 +99,13 @@ class _CustomTextFieldState extends State<CustomTextField> {
                               icon:
                                   isShowPassword
                                       ? Icon(
-                                        Icons.remove_red_eye,
+                                        Icons.visibility_off_outlined,
                                         color: Theme.of(
                                           context,
                                         ).colorScheme.onPrimary.withAlpha(100),
                                       )
                                       : Icon(
-                                        Icons.remove_red_eye_outlined,
+                                        Icons.visibility_outlined,
                                         color: Theme.of(
                                           context,
                                         ).colorScheme.onPrimary.withAlpha(100),

@@ -5,7 +5,7 @@ import 'package:workout_prediction_system_mobile/utils/text_utils.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;
-  final void Function() onPressed;
+  final VoidCallback? onPressed;
   final bool isSocial;
   final bool isOutlined;
   final double? height;
@@ -29,7 +29,9 @@ class CustomButton extends StatelessWidget {
         margin: EdgeInsets.symmetric(vertical: 8.h),
         decoration: BoxDecoration(
           color:
-              isSocial
+              onPressed == null
+                  ? Colors.grey
+                  : isSocial
                   ? Theme.of(context).colorScheme.onTertiary
                   : isOutlined
                   ? Colors.transparent
@@ -58,7 +60,9 @@ class CustomButton extends StatelessWidget {
               text,
               style: TextUtils.kSubHeading(context).copyWith(
                 color:
-                    isSocial
+                    onPressed == null
+                        ? Colors.white
+                        : isSocial
                         ? Theme.of(context).colorScheme.onPrimary
                         : isOutlined
                         ? Theme.of(context).colorScheme.secondary

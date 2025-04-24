@@ -39,6 +39,17 @@ dependencies:
   flutter_svg: ^2.0.17
   flutter_native_splash: ^2.4.4
   smooth_page_indicator: ^1.2.1
+  # Riverpod for state management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  equatable: ^2.0.5
+  intl: ^0.19.0 # For date formatting
+  firebase_core: ^2.25.4 # Firebase Core
+  firebase_auth: ^4.17.5 # Firebase Authentication
+  cloud_firestore: ^4.15.5 # Firestore
+  firebase_storage: ^11.6.6 # Firebase Storage
+  connectivity_plus: ^5.0.2 # Network connectivity
+  image_picker: ^1.0.7 # For picking profile pictures
 
 dev_dependencies:
   flutter_test:
@@ -50,6 +61,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.7
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
