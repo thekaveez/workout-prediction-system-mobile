@@ -50,6 +50,12 @@ dependencies:
   firebase_storage: ^11.6.6 # Firebase Storage
   connectivity_plus: ^5.0.2 # Network connectivity
   image_picker: ^1.0.7 # For picking profile pictures
+  http: ^1.1.0 # For API requests
+  cached_network_image: ^3.4.0
+  health: ^12.1.0 # For HealthKit (iOS) and Health Connect (Android) integration
+  url_launcher: ^6.2.5 # For launching URLs (like Play Store)
+  video_player: ^2.8.2
+  youtube_player_flutter: ^9.0.0
 
 dev_dependencies:
   flutter_test:
@@ -79,6 +85,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - excercises.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

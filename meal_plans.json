@@ -1,0 +1,1968 @@
+{
+  "label0": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/166422148725075897/"],
+      "name": "Peanut Butter Banana Oats",
+      "benefits": [
+        "Slow-releasing energy from oats keeps you full through the morning.",
+        "Healthy fats and protein from peanut butter help with weight maintenance and muscle repair.",
+        "Milk adds calcium and extra protein.",
+        "Banana and honey provide natural sugars for a gentle energy boost."
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Whole milk – 1 cup (150 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Banana – ½ medium (45 kcal)",
+        "Honey – 1 tsp (20 kcal)"
+      ],
+      "instructions": [
+        "Boil oats in milk until soft (~5 mins).",
+        "Stir in peanut butter and honey.",
+        "Slice banana on top.",
+        "Optional: add cinnamon or flax seeds for extra fiber."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/343610646590218650/"],
+      "name": "Chicken Rice Bowl",
+      "benefits": [
+        "High protein from chicken supports lean body mass and tissue repair.",
+        "Brown rice gives long-lasting energy and fiber for digestion.",
+        "Avocado and olive oil provide heart-healthy fats.",
+        "Broccoli adds antioxidants, vitamins C and K.",
+        "Greek yogurt boosts gut health and adds calcium."
+      ],
+      "ingredients": [
+        "Cooked brown rice – ¾ cup (160 kcal)",
+        "Grilled chicken breast – 100g (165 kcal)",
+        "Steamed broccoli – ½ cup (25 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Olive oil (for drizzle) – 1 tsp (45 kcal)",
+        "Greek yogurt (low-fat, plain) – 2 tbsp as sauce (45 kcal)"
+      ],
+      "instructions": [
+        "Layer rice, veggies, and chicken in a bowl.",
+        "Drizzle with olive oil.",
+        "Top with Greek yogurt dressing and avocado."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/298574650319475536/"],
+      "name": "Creamy Egg Pasta with Veggies",
+      "benefits": [
+        "Whole wheat pasta provides fiber and complex carbs for sustained energy.",
+        "Egg adds complete protein and essential nutrients like choline and vitamin D.",
+        "Spinach offers iron, folate, and fiber for overall vitality.",
+        "Cheese and milk contribute calcium and taste to support bone health.",
+        "Olive oil aids the absorption of fat-soluble vitamins."
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1 cup cooked (175 kcal)",
+        "Boiled egg – 1 large (75 kcal)",
+        "Cooked spinach – ½ cup (20 kcal)",
+        "Grated cheddar cheese – 2 tbsp (110 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Milk – 2 tbsp (for creaminess) (20 kcal)",
+        "Onion & garlic (for flavor) – optional"
+      ],
+      "instructions": [
+        "Cook pasta and sauté onion/garlic in olive oil.",
+        "Add spinach and milk to the pan.",
+        "Mix in cheese and stir until creamy.",
+        "Toss pasta in the sauce and top with sliced boiled egg."
+      ]
+    }
+  },
+  "label1": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/653584964711375502/"],
+      "name": "Honey Almond Banana Yogurt Bowl",
+      "benefits": [
+        "Rich in protein, healthy fats, and energy-packed carbs."
+      ],
+      "ingredients": [
+        "Full-fat Greek yogurt – ¾ cup (135 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Almonds (crushed) – 10 whole (70 kcal)",
+        "Rolled oats – ¼ cup (75 kcal)",
+        "Honey – 1 tbsp (65 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)"
+      ],
+      "instructions": [
+        "Layer Greek yogurt in a bowl.",
+        "Add sliced banana and oats.",
+        "Sprinkle almonds, chia seeds, and drizzle with honey.",
+        "Stir and enjoy chilled or room temp."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/333688653659628154/"],
+      "name": "Avocado Chicken Wrap with Veggie Sticks",
+      "benefits": [
+        "High in protein and healthy fats, supports energy and satiety."
+      ],
+      "ingredients": [
+        "Whole wheat wrap – 1 large (130 kcal)",
+        "Grilled chicken (shredded) – 100g (165 kcal)",
+        "Avocado – ½ medium (120 kcal)",
+        "Lettuce, tomato, cucumber – handfuls (~20 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Low-fat cheese – 1 slice (70 kcal)"
+      ],
+      "instructions": [
+        "Lay out the wrap, layer with veggies, avocado, and chicken.",
+        "Drizzle olive oil, top with cheese, roll and toast lightly.",
+        "Serve with cucumber or carrot sticks on the side."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/149111437656118084/"],
+      "name": "Egg Fried Rice with Tofu and Veggies",
+      "benefits": [
+        "Balanced plant-protein, healthy fats, and comforting meals."
+      ],
+      "ingredients": [
+        "Cooked rice – ¾ cup (165 kcal)",
+        "Egg – 1 large (75 kcal)",
+        "Firm tofu – ½ cup cubed (90 kcal)",
+        "Mixed vegetables (peas, carrots, bell peppers) – ½ cup (40 kcal)",
+        "Soy sauce – 1 tbsp (10 kcal)",
+        "Sesame oil – 1 tsp (45 kcal)",
+        "Garlic & onion – for flavor"
+      ],
+      "instructions": [
+        "Heat sesame oil, add garlic, onion, tofu and veggies.",
+        "Push to side of pan, scramble egg in the same pan.",
+        "Add cooked rice, soy sauce, and stir-fry all together."
+      ]
+    }
+  },
+  "label2": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/759419555929294402/"],
+      "name": "Creamy Banana-Peanut Butter Oats",
+      "benefits": [
+        "High in healthy fats, fiber, and natural sugars",
+        "Provides slow-releasing energy for a productive morning",
+        "Good source of calcium, potassium, and omega-3s"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Full cream milk – 1 cup (150 kcal)",
+        "Peanut butter – 1.5 tbsp (140 kcal)",
+        "Banana – 1 small (80 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in milk until soft (~5 mins).",
+        "Stir in peanut butter and honey.",
+        "Top with sliced banana and chia seeds."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/443323157088446019/"],
+      "name": "Creamy Chickpea & Quinoa Bowl with Feta and Roasted Veggies",
+      "benefits": [
+        "Complete protein from quinoa + chickpeas",
+        "Fiber-rich and great for digestion",
+        "Feta adds calcium and flavor without too many calories",
+        "Healthy fats from olive oil and tahini for energy"
+      ],
+      "ingredients": [
+        "Cooked quinoa – ¾ cup (170 kcal)",
+        "Boiled chickpeas – ½ cup (135 kcal)",
+        "Roasted sweet potato – ½ cup (90 kcal)",
+        "Crumbled feta cheese – 2 tbsp (80 kcal)",
+        "Olive oil (for roasting & drizzle) – 2 tsp (90 kcal)",
+        "Spinach or kale (lightly sautéed or raw) – 1 cup (15 kcal)",
+        "Lemon juice or tahini (optional dressing) – 1 tbsp (20 kcal)"
+      ],
+      "instructions": [
+        "Roast sweet potato cubes in 1 tsp olive oil at 200°C (400°F) for 20–25 mins.",
+        "Cook quinoa and season lightly with salt or herbs.",
+        "In a bowl, layer quinoa, chickpeas, roasted sweet potatoes, greens, and feta.",
+        "Drizzle with remaining olive oil and lemon juice or tahini if desired."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/237494580355979296/"],
+      "name": "Egg & Veggie Creamy Pasta Bowl",
+      "benefits": [
+        "Balanced with complex carbs, protein, and fats",
+        "Supports muscle and bone health",
+        "Iron from spinach helps with energy metabolism"
+      ],
+      "ingredients": [
+        "Cooked whole wheat pasta – 1 cup (175 kcal)",
+        "Boiled egg – 1 large (75 kcal)",
+        "Cooked spinach – ½ cup (20 kcal)",
+        "Grated cheese (cheddar or mozzarella) – 2 tbsp (110 kcal)",
+        "Milk – 2 tbsp (20 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Garlic/onion (optional for flavor)"
+      ],
+      "instructions": [
+        "Cook pasta and set aside.",
+        "Sauté garlic/onion in olive oil. Add spinach and milk.",
+        "Stir in cheese until creamy.",
+        "Mix in pasta and top with sliced boiled egg."
+      ]
+    }
+  },
+  "label3": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/150026231331351129/",
+        "https://www.pinterest.com/pin/270216046362107074/"
+      ],
+      "name": "Peanut Butter Banana Smoothie + Boiled Egg & Toast",
+      "benefits": [
+        "High in protein and healthy fats for muscle support",
+        "Sustains energy with complex carbs and natural sugars",
+        "Rich in calcium, potassium, and fiber"
+      ],
+      "ingredients": [
+        "Banana – 1 medium (90 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Peanut butter – 2 tbsp (190 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Whole wheat toast – 1 slice (45 kcal)"
+      ],
+      "instructions": [
+        "Blend banana, milk, peanut butter, chia seeds, and honey into a smoothie.",
+        "Serve with a boiled egg and toast on the side."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/160511174725370916/"],
+      "name": "Chicken Quinoa Bowl with Roasted Veggies & Yogurt",
+      "benefits": [
+        "Complete protein from quinoa + chicken",
+        "Boosts immunity and digestion",
+        "Great source of iron, fiber, and vitamins"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 100g (165 kcal)",
+        "Cooked quinoa – ¾ cup (170 kcal)",
+        "Roasted carrots, bell pepper, and zucchini – ½ cup (90 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Greek yogurt (plain) – ½ cup (100 kcal)",
+        "Lemon juice/herbs – optional for flavor"
+      ],
+      "instructions": [
+        "Roast vegetables with olive oil and a pinch of salt.",
+        "Assemble chicken, quinoa, and veggies in a bowl.",
+        "Serve with yogurt and drizzle lemon juice if preferred."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/563018698478861/"],
+      "name": "Sweet Potato, Lentil & Egg Power Bowl",
+      "benefits": [
+        "High in fiber, protein, and iron",
+        "Ideal for post-activity muscle recovery",
+        "Great for gut health and heart function"
+      ],
+      "ingredients": [
+        "Boiled or roasted sweet potato – ½ medium (100 kcal)",
+        "Cooked lentils – ¾ cup (170 kcal)",
+        "Sautéed spinach – ½ cup (20 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Feta or grated cheddar cheese – 2 tbsp (110 kcal)",
+        "Garlic, herbs – optional"
+      ],
+      "instructions": [
+        "Boil or roast sweet potato.",
+        "Sauté spinach with garlic in olive oil.",
+        "Assemble lentils, sweet potato, spinach, and sliced egg in a bowl.",
+        "Top with cheese and herbs"
+      ]
+    }
+  },
+  "label4": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/644225921733423063/"],
+      "name": "High-Protein Banana Oat Pancakes with Nut Butter",
+      "benefits": [
+        "Packed with protein, fiber, and healthy fats",
+        "Sustained energy and blood sugar stability",
+        "Great for muscle support and weight maintenance"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Eggs – 2 whole (150 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Milk (full cream) – ½ cup (75 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Cinnamon – optional"
+      ],
+      "instructions": [
+        "Blend banana, oats, eggs, and milk into a batter.",
+        "Pour onto a pan and cook pancakes until golden.",
+        "Serve with peanut butter and a drizzle of honey."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/36451078228850013/"],
+      "name": "Grilled Chicken & Avocado Rice Bowl",
+      "benefits": [
+        "High in lean protein and fiber",
+        "Combines good fats and complex carbs",
+        "Excellent for energy and satiety"
+      ],
+      "ingredients": [
+        "Cooked brown rice – 1 cup (215 kcal)",
+        "Grilled chicken breast – 100g (165 kcal)",
+        "Avocado – ½ (120 kcal)",
+        "Steamed broccoli & carrots – ½ cup (40 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Yogurt (low-fat, plain) – 2 tbsp (55 kcal)"
+      ],
+      "instructions": [
+        "Layer rice in a bowl.",
+        "Add grilled chicken and vegetables.",
+        "Top with avocado and yogurt.",
+        "Drizzle olive oil and season as desired."
+      ]
+    },
+    "dinner": {
+      "images": [
+        "https://www.pinterest.com/pin/Aaz-c3Yn5rFH8awsLXRkfVqYsFlWGqTTLtDRALGiruR0oV73XGLoLHE/",
+        "https://www.pinterest.com/pin/288441551154756285/"
+      ],
+      "name": "Lentil Pasta with Spinach & Egg + Side Salad",
+      "benefits": [
+        "Rich in plant-based protein and iron",
+        "Balanced macros for evening nourishment",
+        "Supports recovery, brain function, and gut health"
+      ],
+      "ingredients": [
+        "Cooked whole wheat pasta – 1 cup (175 kcal)",
+        "Boiled egg – 1 large (75 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Spinach – ½ cup sautéed (20 kcal)",
+        "Olive oil – 1.5 tsp (67 kcal)",
+        "Grated cheese – 2 tbsp (110 kcal)",
+        "Mixed greens salad (no dressing) – handful (20 kcal)",
+        "Lemon/olive oil dressing – 1 tsp (48 kcal)"
+      ],
+      "instructions": [
+        "Sauté spinach and lentils with olive oil.",
+        "Toss with cooked pasta and cheese.",
+        "Serve with boiled egg and side salad with lemon-olive dressing."
+      ]
+    }
+  },
+  "label5": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/20266267063566194/",
+        "https://www.pinterest.com/pin/278660295680549170/"
+      ],
+      "name": "Oatmeal with Banana, Peanut Butter & Chia + Boiled Egg",
+      "benefits": [
+        "Provides healthy fats, protein, and fiber",
+        "Great for long-lasting energy and satiety",
+        "Helps support muscle growth and brain health"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Peanut butter – 2 tbsp (190 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Boiled egg – 1 (75 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in milk until soft.",
+        "Stir in peanut butter and honey.",
+        "Top with sliced banana and chia seeds.",
+        "Serve with boiled egg on the side."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/80079699609780054/"],
+      "name": "Grilled Chicken & Quinoa Bowl with Avocado and Yogurt Dressing",
+      "benefits": [
+        "High in lean protein and good fats",
+        "Supports gut health, immunity, and strength",
+        "Rich in iron, fiber, and essential vitamins"
+      ],
+      "ingredients": [
+        "Cooked quinoa – 1 cup (222 kcal)",
+        "Grilled chicken breast – 120g (200 kcal)",
+        "Avocado – ½ fruit (120 kcal)",
+        "Olive oil – 1.5 tsp (67 kcal)",
+        "Cooked broccoli & carrots – 1 cup (80 kcal)",
+        "Greek yogurt (plain) – 2 tbsp (55 kcal)",
+        "Lemon juice/herbs – optional"
+      ],
+      "instructions": [
+        "Layer quinoa as the base.",
+        "Top with grilled chicken, avocado, and veggies.",
+        "Mix yogurt with lemon juice and herbs as dressing.",
+        "Drizzle olive oil before serving."
+      ]
+    },
+    "dinner": {
+      "images": [
+        "https://www.pinterest.com/pin/754775218805594933/",
+        "https://www.pinterest.com/pin/562387072237302577/"
+      ],
+      "name": "Creamy Lentil & Sweet Potato Pasta Bowl + Salad",
+      "benefits": [
+        "Combines plant protein, fiber, and complex carbs",
+        "Supports energy levels and recovery",
+        "Good for bone and heart health"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1 cup cooked (175 kcal)",
+        "Cooked lentils – ¾ cup (170 kcal)",
+        "Roasted sweet potato – ½ cup (100 kcal)",
+        "Olive oil – 1.5 tsp (67 kcal)",
+        "Grated cheddar cheese – 2 tbsp (110 kcal)",
+        "Spinach sautéed in olive oil – ½ cup (30 kcal)",
+        "Mixed greens salad + lemon dressing – 1 cup (60 kcal)"
+      ],
+      "instructions": [
+        "Roast sweet potato with a drizzle of olive oil.",
+        "Mix lentils, sweet potato, and spinach into the cooked pasta.",
+        "Stir in cheese and mix until creamy.",
+        "Serve with a fresh salad on the side."
+      ]
+    }
+  },
+  "label6": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/838302918182398415/",
+        "https://www.pinterest.com/pin/32440059823401650/"
+      ],
+      "name": "Nutty Banana Smoothie Bowl + Toasted Egg Sandwich",
+      "benefits": [
+        "Great combo of protein, carbs, and healthy fats",
+        "Smooth digestion and sustained morning energy",
+        "Supports muscle and brain function"
+      ],
+      "ingredients": [
+        "Banana – 1 medium (90 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Peanut butter – 2 tbsp (190 kcal)",
+        "Rolled oats – ¼ cup (75 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Whole wheat bread – 2 slices (130 kcal)",
+        "Boiled egg – 1 (75 kcal)"
+      ],
+      "instructions": [
+        "Blend banana, milk, peanut butter, oats, honey, and chia seeds into a thick smoothie.",
+        "Pour into a bowl and top with a few nuts/seeds.",
+        "Serve with a boiled egg and toast on the side."
+      ]
+    },
+    "lunch": {
+      "images": [
+        "https://www.pinterest.com/pin/362047257565482260/",
+        "https://www.pinterest.com/pin/468655904990870612/"
+      ],
+      "name": "Grilled Chicken & Avocado Quinoa Bowl + Fruit Yogurt",
+      "benefits": [
+        "Complete meal with protein, fiber, and micronutrients",
+        "Aids in muscle recovery and bone health",
+        "Avocado and olive oil help absorb fat-soluble vitamins"
+      ],
+      "ingredients": [
+        "Quinoa – 1 cup cooked (222 kcal)",
+        "Grilled chicken breast – 120g (200 kcal)",
+        "Avocado – ½ fruit (120 kcal)",
+        "Olive oil – 2 tsp (90 kcal)",
+        "Cooked mixed vegetables – 1 cup (80 kcal)",
+        "Greek yogurt (plain) – ½ cup (100 kcal)",
+        "Apple or pear – ½ (40 kcal)"
+      ],
+      "instructions": [
+        "Layer quinoa, veggies, and chicken in a bowl.",
+        "Top with avocado slices and olive oil drizzle.",
+        "Serve yogurt with fresh fruit slices for dessert."
+      ]
+    },
+    "dinner": {
+      "images": [
+        "https://www.pinterest.com/pin/49117452180419046/",
+        "https://www.pinterest.com/pin/34902965858725236/"
+      ],
+      "name": "Creamy Lentil Pasta with Roasted Veggies + Egg & Cheese",
+      "benefits": [
+        "Rich in plant-based protein and complex carbs",
+        "Cheese and eggs offer calcium and B12",
+        "Excellent for muscle support and energy"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1 cup cooked (175 kcal)",
+        "Cooked lentils – ¾ cup (170 kcal)",
+        "Roasted sweet potato – ½ cup (100 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Cheddar or mozzarella cheese – 2 tbsp (110 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Herbs & lemon juice (optional)"
+      ],
+      "instructions": [
+        "Roast sweet potato and sauté spinach in olive oil.",
+        "Toss cooked pasta with lentils, sweet potato, cheese, and greens.",
+        "Top with sliced boiled egg and drizzle a little extra olive oil if needed."
+      ]
+    }
+  },
+  "label7": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/1017672847056433242/",
+        "https://www.pinterest.com/pin/1618549855445655/"
+      ],
+      "name": "Banana Nut Butter Smoothie + Boiled Egg & Toast",
+      "benefits": [
+        "Packed with fiber, protein, and good fats",
+        "Provides long-lasting energy",
+        "Supports muscle repair and satiety"
+      ],
+      "ingredients": [
+        "1 banana (90 kcal)",
+        "1 cup full cream milk (150 kcal)",
+        "2 tbsp peanut butter (190 kcal)",
+        "¼ cup oats (75 kcal)",
+        "1 tsp chia seeds (30 kcal)",
+        "1 tsp honey (20 kcal)",
+        "2 slices of whole grain toast (140 kcal)",
+        "1 boiled egg (75 kcal)"
+      ],
+      "instructions": [
+        "Blend banana, milk, peanut butter, oats, chia seeds, and honey into a smoothie.",
+        "Serve with boiled egg and toast."
+      ]
+    },
+    "lunch": {
+      "images": [
+        "https://www.pinterest.com/pin/36451078228850013/",
+        "https://www.pinterest.com/pin/727683252330871032/"
+      ],
+      "name": "Grilled Chicken & Avocado Rice Bowl + Yogurt",
+      "benefits": [
+        "Balanced with complex carbs, lean protein, and good fats",
+        "Boosts energy, immunity, and gut health",
+        "Ideal for muscle and bone support"
+      ],
+      "ingredients": [
+        "Cooked brown rice – 1 cup (215 kcal)",
+        "Grilled chicken breast – 120g (200 kcal)",
+        "Avocado – ½ (120 kcal)",
+        "Steamed broccoli & carrots – 1 cup (80 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Greek yogurt – ½ cup (100 kcal)",
+        "Lemon juice/herbs – optional"
+      ],
+      "instructions": [
+        "In a bowl, layer brown rice, chicken, veggies, and sliced avocado.",
+        "Drizzle olive oil and season with herbs/lemon.",
+        "Serve yogurt on the side"
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/2533343537304130/"],
+      "name": "Creamy Lentil & Egg Pasta with Side Salad",
+      "benefits": [
+        "Combines plant and animal proteins",
+        "Fiber-rich for digestion and energy",
+        "Supports overall strength and recovery"
+      ],
+      "ingredients": [
+        "Cooked whole wheat pasta – 1 cup (175 kcal)",
+        "Cooked lentils – ¾ cup (170 kcal)",
+        "Grated cheddar cheese – 2 tbsp (110 kcal)",
+        "Spinach sautéed in olive oil – 1 cup (60 kcal)",
+        "Sweet potato (roasted) – ½ cup (100 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Mixed salad + lemon dressing – 1 cup (60 kcal)"
+      ],
+      "instructions": [
+        "Cook pasta and mix with lentils, sautéed spinach, and cheese.",
+        "Top with sweet potato and sliced boiled egg.",
+        "Serve with a fresh salad and lemon-olive dressing."
+      ]
+    }
+  },
+  "label12": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/172544229470388861/"],
+      "name": "Banana & Peanut Butter Oatmeal",
+      "benefits": [
+        "High in energy, healthy fats, and fiber",
+        "Supports brain development and energy balance",
+        "Gentle on digestion"
+      ],
+      "ingredients": [
+        "Rolled oats – ¼ cup (75 kcal)",
+        "Full cream milk – ½ cup (75 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Banana – ½ (45 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in milk until creamy.",
+        "Stir in peanut butter and honey.",
+        "Top with banana slices and chia seeds."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/9499849208636730/"],
+      "name": "Rice, Egg & Veggie Bowl",
+      "benefits": [
+        "Balanced carb-protein-fat meal",
+        "Provides vitamins A, D, and protein",
+        "Easy to chew and digest"
+      ],
+      "ingredients": [
+        "Cooked white or brown rice – ½ cup (110 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Steamed carrots & peas – ½ cup (50 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Grated cheese – 1 tbsp (70 kcal)"
+      ],
+      "instructions": [
+        "In a bowl, mix rice, chopped egg, and steamed vegetables.",
+        "Drizzle with olive oil and sprinkle with cheese."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/48202658501427491/"],
+      "name": "Creamy Lentil Pasta",
+      "benefits": [
+        "Plant-based iron and protein",
+        "High in calories and easy to eat",
+        "Ideal for evening digestion"
+      ],
+      "ingredients": [
+        "Cooked pasta – ½ cup (110 kcal)",
+        "Cooked red lentils – ¼ cup (90 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Grated cheese – 1 tbsp (55 kcal)"
+      ],
+      "instructions": [
+        "Cook pasta and mix in cooked lentils.",
+        "Add olive oil and cheese, stir until creamy.",
+        "Serve warm with optional herbs."
+      ]
+    }
+  },
+  "label13": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/84653668201089375/"],
+      "name": "Banana Oats with Peanut Butter & Milk",
+      "benefits": [
+        "High in energy and fiber",
+        "Includes healthy fats and protein",
+        "Great for brain and body development"
+      ],
+      "ingredients": [
+        "Rolled oats – ¼ cup (75 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Banana – ½ medium (45 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in milk until soft.",
+        "Stir in peanut butter and honey.",
+        "Top with banana slices and chia seeds."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/6825836928259197/"],
+      "name": "Tuna & Avocado Whole Wheat Wrap",
+      "benefits": [
+        "High-quality protein from tuna and yogurt",
+        "Healthy fats from avocado and olive oil",
+        "Whole grains and veggies offer fiber and essential vitamins",
+        "Great for muscle recovery, brain support, and energy"
+      ],
+      "ingredients": [
+        "Whole wheat wrap – 1 medium (130 kcal)",
+        "Canned tuna in water – ½ can (60g, drained) (90 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Greek yogurt (plain, for spread) – 2 tbsp (45 kcal)",
+        "Grated carrot & lettuce – ¼ cup mixed (10 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Lemon juice or herbs (optional – 0 kcal)"
+      ],
+      "instructions": [
+        "In a bowl, mash the tuna and avocado together with yogurt, olive oil, and a splash of lemon juice.",
+        "Lay the whole wheat wrap flat and spread the tuna-avocado mix in the center.",
+        "Top with shredded carrot and lettuce.",
+        "Roll it up and toast lightly if desired."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/224968943876348959/"],
+      "name": "Mini Pasta Bowl with Lentils & Cheese",
+      "benefits": [
+        "Combines plant-based protein and healthy fats",
+        "High in iron and fiber",
+        "Supports energy levels and digestion"
+      ],
+      "ingredients": [
+        "Cooked whole wheat pasta – ½ cup (110 kcal)",
+        "Cooked red lentils – ¼ cup (90 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Grated cheddar cheese – 2 tbsp (110 kcal)",
+        "Sautéed spinach – ¼ cup (20 kcal)",
+        "Garlic or herbs – optional"
+      ],
+      "instructions": [
+        "Mix lentils with pasta and olive oil in a pan.",
+        "Add cheese and spinach, stir until warm and creamy."
+      ]
+    }
+  },
+  "label14": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/550565123214487172/"],
+      "name": "Whole Wheat Pancakes with Fruit & Yogurt",
+      "benefits": [
+        "Rich in complex carbs for steady energy",
+        "Contains protein and healthy fats for growth and repair",
+        "Yogurt provides calcium and gut-friendly probiotics",
+        "Naturally sweet and satisfying with no added sugar"
+      ],
+      "ingredients": [
+        "Whole wheat flour – ½ cup (200 kcal)",
+        "Egg – 1 (75 kcal)",
+        "Full-fat milk – ½ cup (75 kcal)",
+        "Banana – ½ medium, sliced (45 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Olive oil (for cooking) – 1 tsp (45 kcal)",
+        "Plain Greek yogurt – 2 tbsp (30 kcal)"
+      ],
+      "instructions": [
+        "In a bowl, whisk egg, flour, and milk until smooth.",
+        "Heat olive oil in a pan and cook pancakes until golden on both sides.",
+        "Top with sliced banana, a dollop of yogurt, and a drizzle of honey."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/221802350391840937/"],
+      "name": "Tuna Pasta Salad Bowl",
+      "benefits": [
+        "Protein-rich from tuna, yogurt, and cheese",
+        "Complex carbs from pasta for steady energy",
+        "Healthy fats from olive oil",
+        "Full of vitamins, fiber, and calcium",
+        "Light, refreshing, and perfect for digestion"
+      ],
+      "ingredients": [
+        "Cooked whole wheat pasta – ¾ cup (170 kcal)",
+        "Canned tuna in water (drained) – 70g (90 kcal)",
+        "Sweet corn – ¼ cup (35 kcal)",
+        "Chopped cucumber & cherry tomatoes – ½ cup (20 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Grated cheddar cheese – 1 tbsp (55 kcal)",
+        "Plain Greek yogurt (for dressing) – 2 tbsp (55 kcal)"
+      ],
+      "instructions": [
+        "Mix the cooked pasta with drained tuna, sweet corn, cucumber, and tomatoes.",
+        "In a small bowl, mix Greek yogurt with a bit of lemon juice and pepper for a creamy dressing.",
+        "Pour yogurt dressing over the pasta salad and toss.",
+        "Drizzle with olive oil and sprinkle grated cheese on top."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/96334879519134368/"],
+      "name": "Sweet Potato, Chickpea & Egg Power Bowl",
+      "benefits": [
+        "Rich in fiber, complex carbs, and protein",
+        "Sweet potato provides beta-carotene and slow-releasing energy",
+        "Chickpeas and egg support muscle repair and fullness",
+        "Feta adds calcium and a tasty finish"
+      ],
+      "ingredients": [
+        "Roasted sweet potato – ½ cup (100 kcal)",
+        "Cooked chickpeas – ½ cup (135 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Sautéed kale or spinach – ½ cup (30 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Feta cheese – 1 tbsp (60 kcal)",
+        "Lemon juice & herbs – optional"
+      ],
+      "instructions": [
+        "Roast sweet potato cubes with a little olive oil until golden.",
+        "Warm the chickpeas with sautéed greens in a pan.",
+        "Add all to a bowl with sliced boiled egg and crumbled feta on top.",
+        "Drizzle with lemon juice or sprinkle herbs for added flavor."
+      ]
+    }
+  },
+  "label15": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/1017672847056433242/",
+        "https://www.pinterest.com/pin/1618549855445655/"
+      ],
+      "name": "Banana Peanut Butter Smoothie + Egg & Toast",
+      "benefits": [
+        "Boosts energy and focus",
+        "Excellent mix of protein, fiber, and healthy fats",
+        "Keeps you full throughout the morning"
+      ],
+      "ingredients": [
+        "1 banana (90 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Rolled oats – ¼ cup (75 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Whole wheat toast – 1 slice (70 kcal)"
+      ],
+      "instructions": [
+        "Blend banana, milk, oats, peanut butter, chia seeds, and honey until smooth.",
+        "Serve with a slice of toast (optional: spread a little butter or more PB)."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/184929128443177220/"],
+      "name": "Chicken Quinoa Bowl with Yogurt Dressing",
+      "benefits": [
+        "High in lean protein and omega-3 fats",
+        "Rich in fiber, iron, and vitamins A & C",
+        "Promotes muscle maintenance and gut health"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 100g (165 kcal)",
+        "Cooked quinoa – ¾ cup (170 kcal)",
+        "Steamed carrots, spinach, peas – ½ cup (40 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Plain yogurt (for dressing) – 2 tbsp (60 kcal)"
+      ],
+      "instructions": [
+        "Layer quinoa, chicken, and veggies in a bowl.",
+        "Top with avocado and drizzle olive oil.",
+        "Add a spoonful of yogurt dressing with lemon/herbs."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/Aaz-c3Yn5rFH8awsLXRkfVqYsFlWGqTTLtDRALGiruR0oV73XGLoLHE/"],
+      "name": "Lentil & Veggie Pasta with Egg and Cheese",
+      "benefits": [
+        "Combines complex carbs with complete protein",
+        "Helps with energy restoration and nighttime muscle repair",
+        "Light, nutritious, and satisfying"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – ¾ cup cooked (165 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Grated cheddar cheese – 2 tbsp (110 kcal)",
+        "Steamed spinach – ¼ cup (20 kcal)"
+      ],
+      "instructions": [
+        "Cook pasta and stir in lentils, spinach, and olive oil.",
+        "Mix in cheese until creamy.",
+        "Top with a sliced boiled egg and herbs."
+      ]
+    }
+  },
+  "label16": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/17873729765045791/"],
+      "name": "Greek Yogurt Parfait with Oats, Berries & Almond Butter",
+      "benefits": [
+        "Protein-packed for muscle health",
+        "Contains fiber, healthy fats, and antioxidants",
+        "Keeps you full and focused throughout the morning"
+      ],
+      "ingredients": [
+        "Greek yogurt (plain, full-fat) – ¾ cup (150 kcal)",
+        "Rolled oats – ¼ cup (75 kcal)",
+        "Mixed berries (fresh or frozen) – ½ cup (35 kcal)",
+        "Banana – ½ medium (45 kcal)",
+        "Almond butter – 1 tbsp (100 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Whole grain toast – 1 slice (70 kcal)"
+      ],
+      "instructions": [
+        "Layer yogurt, oats, berries, and sliced banana in a bowl.",
+        "Drizzle with almond butter, honey, and sprinkle chia seeds.",
+        "Serve with a slice of toast on the side."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/969751732267934061/"],
+      "name": "Grilled Chicken, Brown Rice & Avocado Bowl",
+      "benefits": [
+        "Balanced macronutrients in one bowl",
+        "Great for immune support and gut health",
+        "Provides long-lasting energy and satiety"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 100g (165 kcal)",
+        "Cooked brown rice – 1 cup (215 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Steamed broccoli & carrots – 1 cup (80 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Lemon juice or yogurt dressing – optional"
+      ],
+      "instructions": [
+        "Place rice in a bowl and layer with grilled chicken, veggies, and avocado.",
+        "Drizzle with olive oil and a squeeze of lemon juice or a spoonful of yogurt."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/377387643792843671/"],
+      "name": "Whole Wheat Pasta with Lentils, Spinach & Cheese",
+      "benefits": [
+        "Supports muscle recovery and iron levels",
+        "Combines fiber-rich carbs and plant protein",
+        "Easy to prepare and very filling"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – ¾ cup cooked (165 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Grated mozzarella or cheddar – 2 tbsp (110 kcal)",
+        "Cherry tomatoes or bell peppers – ½ cup (35 kcal)"
+      ],
+      "instructions": [
+        "Cook pasta and set aside.",
+        "Sauté spinach and cherry tomatoes in olive oil.",
+        "Mix lentils, veggies, and pasta, then stir in cheese until melted and creamy."
+      ]
+    }
+  },
+  "label17": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/274649277262617500/"],
+      "name": "Oatmeal Bowl with Peanut Butter, Banana & Chia + Boiled Egg",
+      "benefits": [
+        "Combines slow-digesting carbs, protein, and healthy fats",
+        "Helps maintain stable energy and blood sugar",
+        "Great for brain and muscle support"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Peanut butter – 1.5 tbsp (140 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Whole wheat toast – 1 slice (70 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in milk until soft.",
+        "Stir in peanut butter, honey, and chia seeds.",
+        "Top with sliced banana.",
+        "Serve with a boiled egg and toast."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/14073817580352914/"],
+      "name": "Grilled Chicken & Quinoa Power Bowl with Yogurt Dressing",
+      "benefits": [
+        "Balanced meals rich in fiber, healthy fats, and lean protein",
+        "Supports metabolism, muscle repair, and digestion"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 120g (200 kcal)",
+        "Cooked quinoa – 1 cup (222 kcal)",
+        "Steamed broccoli & carrots – 1 cup (80 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Greek yogurt (plain) – 2 tbsp (50 kcal)",
+        "Lemon juice/herbs – optional"
+      ],
+      "instructions": [
+        "Layer quinoa, chicken, and veggies in a bowl.",
+        "Top with avocado and drizzle olive oil.",
+        "Serve with yogurt mixed with lemon juice and herbs as dressing."
+      ]
+    },
+    "dinner": {
+      "images": [],
+      "name": "Lentil & Veggie Pasta with Egg and Cheese",
+      "benefits": [
+        "Supports muscle recovery and iron levels",
+        "Combines fiber-rich carbs and plant protein",
+        "Easy to prepare and very filling"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – ¾ cup cooked (165 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Grated cheddar or mozzarella – 2 tbsp (110 kcal)",
+        "Chopped bell pepper or tomatoes – ½ cup (45 kcal)"
+      ],
+      "instructions": [
+        "Cook pasta and sauté spinach, peppers in olive oil.",
+        "Mix lentils, cooked pasta, and cheese until creamy.",
+        "Top with boiled egg slices."
+      ]
+    }
+  },
+  "label18": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/644225921733423063/"],
+      "name": "Banana Peanut Butter Oat Pancakes + Boiled Egg",
+      "benefits": [
+        "Packed with fiber, protein, and healthy fats",
+        "Keeps you full and energized",
+        "Supports brain and muscle health"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Egg – 1 (75 kcal)",
+        "Milk (full-fat) – ¾ cup (110 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Olive oil for cooking – 1 tsp (45 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Boiled egg (side) – 1 (75 kcal)"
+      ],
+      "instructions": [
+        "Blend oats, banana, egg, and milk into a batter.",
+        "Cook in olive oil like pancakes.",
+        "Top with peanut butter, honey, and chia seeds.",
+        "Serve with boiled egg on the side."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/154318724722437792/"],
+      "name": "GrilledChicken & Brown Rice Bowl with Avocado & Yogurt Dressing",
+      "benefits": [
+        "Balanced macros and high in vitamins & minerals",
+        "Great for immunity, recovery, and sustained energy"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 120g (200 kcal)",
+        "Cooked brown rice – 1 cup (215 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Steamed mixed veggies (carrots, peas, spinach) – 1 cup (80 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Yogurt (plain, full-fat) – 2 tbsp (50 kcal)",
+        "Lemon juice, garlic, herbs – optional"
+      ],
+      "instructions": [
+        "Arrange rice, chicken, and veggies in a bowl.",
+        "Top with avocado.",
+        "Drizzle with olive oil and a yogurt-herb dressing."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/5066618330173846/"],
+      "name": "Lentil, Spinach & Cheese Pasta Bowl with Egg",
+      "benefits": [
+        "High in fiber, iron, protein, and healthy fats",
+        "Supports muscle maintenance and digestion",
+        "Ideal light but satisfying evening meal"
+      ],
+      "ingredients": [
+        "Cooked whole wheat pasta – 1 cup (175 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Grated cheddar or mozzarella cheese – 2 tbsp (110 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Cherry tomatoes or bell pepper – ½ cup (45 kcal)"
+      ],
+      "instructions": [
+        "Sauté spinach and tomatoes in olive oil.",
+        "Mix in lentils and pasta.",
+        "Stir in cheese until creamy.",
+        "Top with sliced boiled egg."
+      ]
+    }
+  },
+  "label19": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/172544229470388861/",
+        "https://www.pinterest.com/pin/160511174218195583/"
+      ],
+      "name": "Creamy Banana Peanut Butter Oats + Boiled Egg",
+      "benefits": [
+        "Excellent source of protein, fiber, and healthy fats",
+        "Supports sustained energy and muscle maintenance"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Peanut butter – 1.5 tbsp (145 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Whole wheat toast – 1 slice (70 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in milk until soft.",
+        "Stir in peanut butter, honey, and chia seeds.",
+        "Top with banana slices.",
+        "Serve with toast and a boiled egg."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/355643701849221907/"],
+      "name": "Grilled Chicken & Avocado Brown Rice Bowl",
+      "benefits": [
+        "Balanced in macros (carbs, protein, fat)",
+        "Rich in fiber, potassium, and antioxidants",
+        "Promotes muscle recovery and digestion"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 120g (200 kcal)",
+        "Cooked brown rice – 1 cup (215 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Steamed broccoli, carrots – 1 cup (80 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Greek yogurt (plain) – 2 tbsp (50 kcal)"
+      ],
+      "instructions": [
+        "Place rice, chicken, and veggies in a bowl.",
+        "Top with sliced avocado and drizzle olive oil.",
+        "Serve with yogurt on the side or use as a dressing base."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/54606214228934164/"],
+      "name": "Lentil & Spinach Pasta with Cheese & Egg",
+      "benefits": [
+        "Great for iron, protein, and energy",
+        "Combines plant and animal proteins",
+        "Supports evening satiety and muscle maintenance"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1 cup cooked (175 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Grated mozzarella or cheddar – 2 tbsp (110 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Cherry tomatoes – ½ cup (45 kcal)"
+      ],
+      "instructions": [
+        "Sauté spinach and tomatoes in olive oil.",
+        "Stir in lentils and mix with cooked pasta.",
+        "Add cheese and mix until creamy.",
+        "Top with sliced boiled egg."
+      ]
+    }
+  },
+  "label20": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/15340454976444956/"],
+      "name": "Peanut Butter Banana Smoothie Bowl + Toast & Boiled Egg",
+      "benefits": [
+        "High in fiber, healthy fats, and protein",
+        "Provides long-lasting energy and satiety",
+        "Great for muscle recovery and metabolism"
+      ],
+      "ingredients": [
+        "Banana – 1 medium (90 kcal)",
+        "Rolled oats – ½ cup (150 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Peanut butter – 2 tbsp (190 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Whole wheat toast – 2 slices (140 kcal)",
+        "Boiled egg – 1 (75 kcal)"
+      ],
+      "instructions": [
+        "Blend banana, oats, milk, peanut butter, honey, and chia seeds into a smoothie.",
+        "Pour into a bowl or serve in a glass.",
+        "Pair with toast and a boiled egg on the side."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/355643701849221907/"],
+      "name": "Grilled Chicken & Avocado Brown Rice Bowl + Greek Yogurt",
+      "benefits": [
+        "Combines lean protein, complex carbs, and healthy fats",
+        "Rich in micronutrients and probiotics",
+        "Ideal for active days and muscle support"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 150g (250 kcal)",
+        "Cooked brown rice – 1 cup (215 kcal)",
+        "Avocado – ½ fruit (120 kcal)",
+        "Steamed veggies (broccoli, carrots, beans) – 1 cup (80 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Greek yogurt (plain) – ¾ cup (145 kcal)"
+      ],
+      "instructions": [
+        "Assemble chicken, rice, avocado, and veggies in a bowl.",
+        "Drizzle with olive oil and serve with Greek yogurt on the side."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/377387643792843671/"],
+      "name": "Whole Wheat Pasta with Lentils, Spinach & Cheese + Egg",
+      "benefits": [
+        "Balanced in macros and rich in iron, fiber, and calcium",
+        "Supports overnight recovery and digestion"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1.5 cups cooked (260 kcal)",
+        "Cooked lentils – ¾ cup (170 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Grated cheddar or mozzarella – 2 tbsp (110 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Bell peppers or tomatoes – ½ cup (45 kcal)"
+      ],
+      "instructions": [
+        "Sauté spinach and bell peppers in olive oil.",
+        "Mix with lentils and pasta.",
+        "Stir in cheese and top with boiled egg slices."
+      ]
+    }
+  },
+  "label21": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/532832199689488982/",
+        "https://www.pinterest.com/pin/30188259995365983/"
+      ],
+      "name": "Banana Peanut Butter Oat Smoothie Bowl + Boiled Egg Toast",
+      "benefits": [
+        "Excellent source of slow-burning energy, protein & healthy fats",
+        "Keeps you full and energized for hours",
+        "Great for brain and muscle support"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Full cream milk – 1 cup (150 kcal)",
+        "Peanut butter – 2 tbsp (190 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Whole grain bread – 2 slices (140 kcal)",
+        "Olive oil (for toast) – 1 tsp (45 kcal)"
+      ],
+      "instructions": [
+        "Blend oats, milk, banana, peanut butter, chia seeds, and honey into a smoothie.",
+        "Serve in a bowl topped with extra banana or nuts if desired.",
+        "Pair with toast topped with sliced boiled egg and a drizzle of olive oil."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/355643701849221907/"],
+      "name": "Grilled Chicken & Avocado Rice Bowl + Yogurt & Fruit",
+      "benefits": [
+        "Combines lean protein, healthy fats, and complex carbs",
+        "High in fiber, antioxidants, calcium, and probiotics",
+        "Ideal for sustained energy and immune health"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 150g (250 kcal)",
+        "Cooked brown rice – 1 cup (215 kcal)",
+        "Avocado – ½ fruit (120 kcal)",
+        "Steamed mixed vegetables – 1 cup (80 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Greek yogurt (plain, full-fat) – ¾ cup (110 kcal)",
+        "Berries or fruit slices – ½ cup (80 kcal)"
+      ],
+      "instructions": [
+        "In a bowl, layer rice, chicken, avocado, and veggies.",
+        "Drizzle with olive oil and season lightly.",
+        "Serve yogurt topped with fruit on the side."
+      ]
+    },
+    "dinner": {
+      "images": [
+        "https://www.pinterest.com/pin/482518547579802403/",
+        "https://www.pinterest.com/pin/41587996554266166/"
+      ],
+      "name": "Lentil & Cheese Pasta Bowl with Egg + Roasted Veggies",
+      "benefits": [
+        "Nutrient-packed, protein-rich vegetarian-friendly dinner",
+        "Great for recovery, gut health, and blood sugar balance",
+        "Comforting and easy to digest"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1.5 cups cooked (260 kcal)",
+        "Cooked lentils – ¾ cup (170 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Grated cheese – 2 tbsp (110 kcal)",
+        "Roasted sweet potato or pumpkin – ½ cup (100 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Garlic/herbs – optional for flavor"
+      ],
+      "instructions": [
+        "Toss cooked pasta with sautéed spinach, lentils, and olive oil.",
+        "Stir in cheese until creamy.",
+        "Top with boiled egg and serve with roasted veggies."
+      ]
+    }
+  },
+  "label22": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/311241024261745335/",
+        "https://www.pinterest.com/pin/26529085298104047/"
+      ],
+      "name": "Strawberry Power Smoothie + Scrambled Egg & Avocado Toast",
+      "benefits": [
+        "High in protein, fiber, and good fats",
+        "Provides long-lasting energy",
+        "Supports brain, muscle, and immune function"
+      ],
+      "ingredients": [
+        "½ cup rolled oats",
+        "1 medium banana",
+        "1 cup full-fat milk",
+        "2 tbsp peanut butter",
+        "1 tsp chia seeds",
+        "1 tsp honey",
+        "½ cup Greek yogurt (plain)",
+        "2 slices whole grain bread",
+        "2 eggs",
+        "¼ avocado (sliced)"
+      ],
+      "instructions": [
+        "Soften the oats: Soak oats in milk for 5–10 minutes (or microwave for 30 seconds if you prefer it warm).",
+        "Blend it all: In a blender, combine soaked oats, banana, peanut butter, milk, chia seeds, Greek yogurt, and honey.",
+        "Serve cold or chilled, optionally topped with a few banana slices or crushed nuts.",
+        "Toast the bread to your preference.",
+        "In a bowl, crack and beat 2 eggs with a pinch of salt and pepper.",
+        "In a nonstick pan, scramble the eggs over medium-low heat using a small amount of butter or oil (optional).",
+        "Spread or layer avocado slices on the toast.",
+        "Top the toast with scrambled eggs, or serve the egg on the side."
+      ]
+    },
+    "lunch": {
+      "images": [
+        "https://www.pinterest.com/pin/663295851407033822/",
+        "https://www.pinterest.com/pin/7670261859649767/"
+      ],
+      "name": "Grilled Chicken & Quinoa Super Bowl + Yogurt & Fruit",
+      "benefits": [
+        "Great balance of macronutrients",
+        "Supports muscle recovery and gut health",
+        "Loaded with iron, potassium, and vitamin C"
+      ],
+      "ingredients": [
+        "150g grilled chicken breast",
+        "1 cup cooked quinoa",
+        "1 tbsp olive oil",
+        "1 cup steamed mixed vegetables (e.g., broccoli, carrots, beans)",
+        "½ avocado, sliced"
+      ],
+      "instructions": [
+        "Cook quinoa: Rinse and cook ½ cup dry quinoa with 1 cup water. Let simmer for ~15 minutes. (Yields ~1 cup cooked.)",
+        "Grill chicken: Season chicken breast with salt, pepper, and optional herbs. Grill or pan-sear for ~5–6 minutes per side or until fully cooked. Slice it up.",
+        "Steam vegetables: Steam your veggie mix until just tender (5–7 minutes).",
+        "Assemble the bowl:",
+        "Add quinoa as the base.",
+        "Top with grilled chicken, veggies, and sliced avocado.",
+        "Drizzle olive oil on top for flavor and healthy fats."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/228276274855988103/"],
+      "name": "Lentil Pasta with Cheese, Egg, & Roasted Veggies",
+      "benefits": [
+        "Packed with fiber, protein, and complex carbs",
+        "Aids post-activity recovery",
+        "Easy to digest and satisfying"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1.5 cups cooked (260 kcal)",
+        "Cooked lentils – ¾ cup (170 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Grated cheddar/mozzarella – 2 tbsp (110 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Roasted sweet potato – ½ cup (100 kcal)",
+        "Sautéed spinach or kale – ½ cup (30 kcal)",
+        "Garlic, herbs – optional"
+      ],
+      "instructions": [
+        "Sauté spinach and garlic in olive oil.",
+        "Toss cooked pasta with lentils, veggies, and cheese.",
+        "Serve topped with a sliced boiled egg and roasted sweet potato on the side."
+      ]
+    }
+  },
+  "label25": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/300756081385961007/"],
+      "name": "High-Fiber Oats & Egg Breakfast Bowl",
+      "benefits": [
+        "High in fiber and healthy fats",
+        "Keeps you full longer and stabilizes energy levels",
+        "Supports digestion and muscle function"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Unsweetened almond milk – ¾ cup (30 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Banana – ½ (45 kcal)",
+        "Cinnamon & honey – 1 tsp each (40 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Optional: flaxseeds or walnuts"
+      ],
+      "instructions": [
+        "Cook oats in almond milk until thick.",
+        "Stir in peanut butter, chia, cinnamon, and honey.",
+        "Top with banana slices.",
+        "Serve with a boiled egg on the side."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/479492691675831470/"],
+      "name": "Grilled Chicken Quinoa Bowl with Yogurt Dressing",
+      "benefits": [
+        "Balanced in protein, complex carbs, and healthy fats",
+        "Supports metabolism and satiety",
+        "High in vitamins and antioxidants"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 120g (200 kcal)",
+        "Cooked quinoa – ¾ cup (170 kcal)",
+        "Steamed broccoli & carrots – 1 cup (80 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Plain Greek yogurt (dressing) – 2 tbsp (50 kcal)",
+        "Lemon juice, herbs, garlic – optional"
+      ],
+      "instructions": [
+        "Cook quinoa and set aside.",
+        "Grill chicken and slice.",
+        "Steam vegetables.",
+        "Combine in a bowl with avocado and drizzle olive oil.",
+        "Mix yogurt with lemon juice and herbs for a simple, light dressing."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/308426274497408864/"],
+      "name": "Lentil & Veggie Pasta Bowl with Cheese & Egg",
+      "benefits": [
+        "High in fiber and plant-based protein",
+        "Supports digestion and muscle maintenance",
+        "Low glycemic and great for evening satiety"
+      ],
+      "ingredients": [
+        "Cooked whole wheat pasta – ¾ cup (165 kcal)",
+        "Cooked green lentils – ½ cup (115 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Grated low-fat cheese – 2 tbsp (90 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Roasted zucchini or bell peppers – ½ cup (60 kcal)"
+      ],
+      "instructions": [
+        "Cook pasta and lentils.",
+        "Sauté spinach and veggies in olive oil.",
+        "Mix everything together and top with cheese and sliced boiled egg."
+      ]
+    }
+  },
+  "label26": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/665477282473303092/"],
+      "name": "Protein Oats Bowl with Boiled Egg",
+      "benefits": [
+        "High in protein, fiber, and healthy fats",
+        "Keeps you full, boosts metabolism",
+        "Great for muscle repair and appetite control"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Unsweetened almond milk – 1 cup (30 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Banana – ½ medium (45 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Protein powder – 1 scoop (100 kcal, optional)",
+        "Boiled egg – 1 (75 kcal)",
+        "Cinnamon & honey – 1 tsp each (35 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in almond milk.",
+        "Stir in protein powder, peanut butter, chia seeds, cinnamon, and honey.",
+        "Top with banana slices.",
+        "Serve with a boiled egg on the side."
+      ]
+    },
+    "lunch": {
+      "images": [
+        "https://www.pinterest.com/pin/93238654779886517/",
+        "https://www.pinterest.com/pin/238761217732222291/"
+      ],
+      "name": "Grilled Chicken, Quinoa & Veggie Bowl + Yogurt",
+      "benefits": [
+        "Balanced with lean protein, fiber, and complex carbs",
+        "Supports stable blood sugar",
+        "Probiotic-rich yogurt aids digestion"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 150g (250 kcal)",
+        "Cooked quinoa – ¾ cup (170 kcal)",
+        "Steamed broccoli & carrots – 1 cup (80 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Greek yogurt (plain) – ½ cup (70 kcal)",
+        "Lemon juice, pepper, herbs – to taste"
+      ],
+      "instructions": [
+        "Cook quinoa and set aside.",
+        "Grill or pan-sear chicken and slice it.",
+        "Steam veggies and plate everything in a bowl.",
+        "Drizzle with olive oil and serve with yogurt on the side."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/2533343537304130/"],
+      "name": "Lentil & Spinach Pasta Bowl with Egg & Cheese",
+      "benefits": [
+        "Excellent plant-protein + fiber combo",
+        "Promotes satiety and blood sugar balance",
+        "Light but satisfying meal for the evening"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1 cup cooked (175 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Olive oil – 1 tsp (45 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Grated low-fat cheese – 2 tbsp (90 kcal)",
+        "Cherry tomatoes or bell peppers – ½ cup (45 kcal)",
+        "Garlic/herbs for flavor"
+      ],
+      "instructions": [
+        "Sauté spinach, garlic, and tomatoes in olive oil.",
+        "Stir in lentils and pasta.",
+        "Add cheese and mix until creamy.",
+        "Top with a sliced boiled egg."
+      ]
+    }
+  },
+  "label27": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/130111876729476708/",
+        "https://www.pinterest.com/pin/278660295680549170/"
+      ],
+      "name": "Protein Oatmeal Bowl + Boiled Egg",
+      "benefits": [
+        "High in fiber, protein, and healthy fats",
+        "Keeps you full and energized",
+        "Supports digestion and muscle function"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Unsweetened almond milk – 1 cup (30 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Banana – ½ (45 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Greek yogurt (plain) – ½ cup (80 kcal)",
+        "Boiled egg – 1 (75 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in almond milk.",
+        "Stir in peanut butter, chia, and honey.",
+        "Top with sliced banana and Greek yogurt.",
+        "Serve with a boiled egg on the side."
+      ]
+    },
+    "lunch": {
+      "images": [
+        "https://www.pinterest.com/pin/920001030131112652/",
+        "https://www.pinterest.com/pin/832462312409501334/"
+      ],
+      "name": "Grilled Chicken Quinoa Bowl + Yogurt Side",
+      "benefits": [
+        "Great for muscle support and fullness",
+        "Balances macronutrients and micronutrients",
+        "High in fiber, potassium, and protein"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 150g (250 kcal)",
+        "Cooked quinoa – ¾ cup (170 kcal)",
+        "Steamed broccoli, carrots, and zucchini – 1 cup (80 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Greek yogurt (plain) – ½ cup (70 kcal)",
+        "Lemon juice, garlic, and herbs – for dressing (optional)"
+      ],
+      "instructions": [
+        "Grill chicken breast – 150g (250 kcal)",
+        "Cook quinoa – ¾ cup (170 kcal)",
+        "Steam broccoli, carrots, and zucchini – 1 cup (80 kcal)",
+        "Slice avocado – ¼ fruit (60 kcal)",
+        "Drizzle olive oil – 1 tbsp (90 kcal)",
+        "Serve with Greek yogurt (plain) – ½ cup (70 kcal)",
+        "Optional: add lemon juice, garlic, and herbs for dressing"
+      ]
+    },
+    "dinner": {
+      "images": [
+        "https://www.pinterest.com/pin/1125968647144833/",
+        "https://www.pinterest.com/pin/367113807142045271/"
+      ],
+      "name": "Lentil & Spinach Pasta with Cheese + Egg & Veggies",
+      "benefits": [
+        "Combines plant and animal proteins",
+        "Great source of iron, fiber, and vitamins",
+        "Promotes evening satisfaction without heaviness"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1 cup cooked (175 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Grated low-fat cheese – 2 tbsp (90 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Roasted bell peppers or eggplant – ½ cup (60 kcal)",
+        "Garlic/herbs – optional"
+      ],
+      "instructions": [
+        "Sauté spinach and garlic in olive oil.",
+        "Toss with cooked pasta and lentils.",
+        "Stir in cheese until creamy.",
+        "Add sliced boiled egg and roasted veggies on the side."
+      ]
+    }
+  },
+  "label28": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/332140541286355267/"],
+      "name": "Oats & Greek Yogurt Bowl with Boiled Egg",
+      "benefits": [
+        "High fiber + protein for fullness",
+        "Supports metabolism and gut health",
+        "Easy to prepare and satisfying"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Unsweetened almond milk – 1 cup (30 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Banana – ½ (45 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Plain Greek yogurt – ½ cup (80 kcal)",
+        "Boiled egg – 1 (75 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in almond milk.",
+        "Stir in chia, peanut butter, and honey.",
+        "Top with banana and a dollop of Greek yogurt.",
+        "Serve with boiled egg on the side."
+      ]
+    },
+    "lunch": {
+      "images": [
+        "https://www.pinterest.com/pin/953355814870060966/",
+        "https://www.pinterest.com/pin/32791903531007464/"
+      ],
+      "name": "Grilled Chicken & Quinoa Power Bowl + Yogurt",
+      "benefits": [
+        "Balanced macronutrient meal",
+        "Rich in iron, potassium, fiber, and lean protein",
+        "Aids muscle support and digestion"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 150g (250 kcal)",
+        "Cooked quinoa – 1 cup (220 kcal)",
+        "Steamed broccoli & carrots – 1 cup (80 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Plain Greek yogurt (side/dip) – ½ cup (50 kcal)"
+      ],
+      "instructions": [
+        "Cook quinoa and steam vegetables.",
+        "Grill chicken with herbs.",
+        "Combine everything in a bowl with olive oil and avocado.",
+        "Serve with yogurt on the side or drizzle as a dressing."
+      ]
+    },
+    "dinner": {
+      "images": [
+        "https://www.pinterest.com/pin/1125968647144833/",
+        "https://www.pinterest.com/pin/291115563430399878/"
+      ],
+      "name": "Lentil & Veggie Pasta with Cheese + Boiled Egg",
+      "benefits": [
+        "Combines plant & animal protein",
+        "Loaded with iron, fiber, vitamins",
+        "Satisfying without being heavy"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1 cup cooked (175 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Grated cheese (light) – 2 tbsp (90 kcal)",
+        "Cherry tomatoes or bell peppers – ½ cup (40 kcal)",
+        "Boiled egg – 1 (75 kcal)"
+      ],
+      "instructions": [
+        "Sauté spinach and tomatoes in olive oil.",
+        "Mix with cooked pasta and lentils.",
+        "Stir in cheese until creamy.",
+        "Top with boiled egg slices."
+      ]
+    }
+  },
+  "label29": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/67202219433483957/",
+        "https://www.pinterest.com/pin/10907224091922892/"
+      ],
+      "name": "High-Protein Oats Bowl + Avocado Egg Toast",
+      "benefits": [
+        "Great balance of protein, complex carbs, and good fats",
+        "Supports digestion, energy, and satiety"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Peanut butter – 1 tbsp (95 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Whole grain bread – 1 slice (70 kcal)",
+        "½ avocado – (120 kcal)",
+        "Boiled egg – 1 (75 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in milk. Stir in peanut butter, chia seeds, and honey. Top with banana slices.",
+        "Toast the bread, mash avocado on top, and place sliced boiled egg over it.",
+        "Sprinkle salt, pepper, or chili flakes to taste."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/698832067218951939/"],
+      "name": "Grilled Chicken Quinoa Bowl with Veggies & Yogurt",
+      "benefits": [
+        "Loaded with lean protein, fiber, and healthy fats",
+        "Keeps you energized and full without heaviness"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 150g (250 kcal)",
+        "Cooked quinoa – 1 cup (220 kcal)",
+        "Steamed broccoli, carrots, and spinach – 1 cup (80 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "¼ avocado (60 kcal)",
+        "Plain Greek yogurt – ½ cup (70 kcal)",
+        "Lemon juice/herbs/pepper – optional"
+      ],
+      "instructions": [
+        "Grill the chicken and cook quinoa.",
+        "Steam vegetables.",
+        "Assemble everything in a bowl: quinoa base, topped with chicken, veggies, and avocado.",
+        "Drizzle with olive oil and serve with a yogurt-based dressing or yogurt on the side."
+      ]
+    },
+    "dinner": {
+      "images": [
+        "https://www.pinterest.com/pin/296041375514504078/",
+        "https://www.pinterest.com/pin/434315957813921155/"
+      ],
+      "name": "Lentil & Veggie Pasta Bowl with Cheese + Egg",
+      "benefits": [
+        "Combines plant protein, fiber, and complex carbs",
+        "Perfect light but nutrient-dense evening meal"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1 cup cooked (175 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Grated low-fat cheese – 2 tbsp (100 kcal)",
+        "Boiled egg – 1 (75 kcal)",
+        "Roasted bell peppers, zucchini – 1 cup (80 kcal)",
+        "Spinach – ½ cup sautéed (30 kcal)",
+        "Garlic/herbs to taste"
+      ],
+      "instructions": [
+        "Roast veggies and sauté spinach.",
+        "Cook pasta and lentils, then combine everything.",
+        "Stir in cheese, mix until creamy.",
+        "Top with sliced boiled egg."
+      ]
+    }
+  },
+  "label30": {
+    "breakfast": {
+      "images": [
+        "https://www.pinterest.com/pin/23995810510002916/",
+        "https://www.pinterest.com/pin/55309901668563880/"
+      ],
+      "name": "Banana Oat Smoothie + Avocado Egg Toast",
+      "benefits": [
+        "High in healthy fats, protein, fiber",
+        "Great for energy, focus, and satiety"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Peanut butter – 1.5 tbsp (145 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "1 slice whole grain toast – (70 kcal)",
+        "½ avocado – (120 kcal)",
+        "1 boiled egg – (75 kcal)"
+      ],
+      "instructions": [
+        "Blend oats, banana, peanut butter, chia seeds, milk, and honey into a smoothie.",
+        "Toast bread, top with mashed avocado and sliced boiled egg."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/32369691056664926/"],
+      "name": "Grilled Chicken Quinoa Power Bowl + Yogurt",
+      "benefits": [
+        "Perfect balance of macronutrients",
+        "Rich in micronutrients, antioxidants, and protein",
+        "Keeps you full and supports muscle maintenance"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 150g (250 kcal)",
+        "Cooked quinoa – 1 cup (220 kcal)",
+        "Steamed mixed vegetables – 1 cup (80 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Greek yogurt (plain) – ½ cup (70 kcal)",
+        "Lemon juice & herbs – to taste"
+      ],
+      "instructions": [
+        "Grill chicken with seasoning.",
+        "Cook quinoa and steam vegetables.",
+        "Assemble everything in a bowl, drizzle with olive oil, and top with sliced avocado.",
+        "Serve yogurt on the side or use as a light dressing."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/308426274497408864/"],
+      "name": "Lentil & Veggie Pasta Bowl with Egg + Cheese",
+      "benefits": [
+        "Combines plant-based and animal protein",
+        "High in fiber, iron, and slow carbs",
+        "Keeps you satisfied without heaviness"
+      ],
+      "ingredients": [
+        "Whole wheat pasta – 1 cup cooked (175 kcal)",
+        "Cooked lentils – ½ cup (115 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Sautéed spinach – ½ cup (30 kcal)",
+        "Grated cheddar or mozzarella – 2 tbsp (110 kcal)",
+        "Roasted bell peppers or zucchini – 1 cup (80 kcal)",
+        "1 boiled egg – (75 kcal)",
+        "Garlic/herbs – to taste"
+      ],
+      "instructions": [
+        "Cook pasta and lentils separately.",
+        "Roast veggies and sauté spinach with olive oil and garlic.",
+        "Mix everything together, add cheese, and stir until creamy.",
+        "Top with sliced boiled egg before serving."
+      ]
+    }
+  },
+  "label31": {
+    "breakfast": {
+      "images": ["https://www.pinterest.com/pin/215680269642230719/"],
+      "name": "Protein Oatmeal Bowl + Avocado Toast & Boiled Egg",
+      "benefits": [
+        "High in protein, fiber, and healthy fats",
+        "Keeps you full and supports energy for your active day"
+      ],
+      "ingredients": [
+        "Rolled oats – ½ cup (150 kcal)",
+        "Full-fat milk – 1 cup (150 kcal)",
+        "Peanut butter – 2 tbsp (190 kcal)",
+        "Banana – 1 medium (90 kcal)",
+        "Chia seeds – 1 tsp (30 kcal)",
+        "Honey – 1 tsp (20 kcal)",
+        "Greek yogurt (plain) – ½ cup (80 kcal)",
+        "Whole grain toast – 1 slice (70 kcal)",
+        "½ avocado – (120 kcal)",
+        "Boiled egg – 1 (75 kcal)"
+      ],
+      "instructions": [
+        "Cook oats in milk and stir in peanut butter, chia, and honey.",
+        "Top with banana and yogurt.",
+        "Toast the bread, mash avocado, and top with sliced boiled egg."
+      ]
+    },
+    "lunch": {
+      "images": ["https://www.pinterest.com/pin/214202526021804269/"],
+      "name": "Grilled Chicken Power Bowl + Yogurt + Fruit",
+      "benefits": [
+        "Balanced mix of complex carbs, lean protein, and healthy fats",
+        "Boosts muscle support and immunity"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 150g (250 kcal)",
+        "Cooked brown rice – 1 cup (215 kcal)",
+        "Steamed mixed vegetables – 1 cup (80 kcal)",
+        "Olive oil – 1 tbsp (90 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Greek yogurt (plain, full-fat) – ¾ cup (110 kcal)",
+        "Fresh berries or sliced apple – 1 cup (120 kcal)"
+      ],
+      "instructions": [
+        "Grill chicken and steam the vegetables.",
+        "Plate with brown rice and avocado.",
+        "Drizzle olive oil over the bowl.",
+        "Serve fruit and yogurt as dessert or a side."
+      ]
+    },
+    "dinner": {
+      "images": ["https://www.pinterest.com/pin/550916966939269579/"],
+      "name": "Grilled Chicken & Sweet Potato Nourish Bowl with Yogurt-Tahini Dressing",
+      "benefits": [
+        "Rich in complex carbs and healthy fats",
+        "Lean protein for recovery and muscle repair",
+        "Packed with fiber, potassium, magnesium, and antioxidants",
+        "Great for post-activity recovery and overnight metabolism"
+      ],
+      "ingredients": [
+        "Grilled chicken breast – 150g (250 kcal)",
+        "Roasted sweet potato – 1 cup cubes (180 kcal)",
+        "Cooked bulgur or brown rice – ¾ cup (165 kcal)",
+        "Sautéed kale or spinach – ½ cup (30 kcal)",
+        "Avocado – ¼ fruit (60 kcal)",
+        "Olive oil (for roasting/sautéing) – 1 tbsp (90 kcal)",
+        "Plain Greek yogurt – ¼ cup (40 kcal)",
+        "Tahini – 1 tsp (60 kcal)",
+        "Lemon juice, garlic, cumin – optional for dressing",
+        "Mixed herbs (parsley, mint, etc.) – optional garnish"
+      ],
+      "instructions": [
+        "Roast sweet potato cubes with a drizzle of olive oil and a pinch of salt (20–25 min at 200°C).",
+        "Grill chicken seasoned with pepper, garlic, and a bit of lemon.",
+        "Cook bulgur or brown rice and let it rest.",
+        "Sauté kale or spinach in ½ tsp olive oil until wilted.",
+        "In a small bowl, whisk together yogurt, tahini, lemon juice, garlic, and a splash of water to make a creamy dressing.",
+        "Assemble your bowl: base of grains, topped with chicken, sweet potato, greens, and avocado. Drizzle with yogurt-tahini sauce and garnish with herbs."
+      ]
+    }
+  }
+}

@@ -4,8 +4,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:workout_prediction_system_mobile/features/auth/providers/auth_provider.dart';
 import 'package:workout_prediction_system_mobile/features/auth/screens/login_page.dart';
+import 'package:workout_prediction_system_mobile/features/exercise/screens/exercise_screen.dart';
 import 'package:workout_prediction_system_mobile/features/home/screens/home_screen.dart';
+import 'package:workout_prediction_system_mobile/features/meal_prediction/screens/meal_prediction_screen.dart';
 import 'package:workout_prediction_system_mobile/features/onboarding/screens/onboarding_screen.dart';
+import 'package:workout_prediction_system_mobile/features/progress/screens/progress_tracking_screen.dart';
+import 'package:workout_prediction_system_mobile/features/progress/screens/workout_recorder_screen.dart';
+import 'package:workout_prediction_system_mobile/features/user_setup/providers/user_setup_provider.dart';
+import 'package:workout_prediction_system_mobile/features/user_setup/screens/user_setup_screen.dart';
 import 'package:workout_prediction_system_mobile/firebase_options.dart';
 
 void main() async {
@@ -17,11 +23,25 @@ void main() async {
   runApp(const ProviderScope(child: MyApp()));
 }
 
-class MyApp extends ConsumerWidget {
+class MyApp extends ConsumerStatefulWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends ConsumerState<MyApp> {
+  @override
+  void initState() {
+    super.initState();
+    // Schedule user setup data loading after the widget tree is built
+    Future.microtask(() {
+      ref.read(userSetupProvider.notifier).loadUserSetupData();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(393, 852),
       minTextAdapt: true,
@@ -46,25 +66,37 @@ class MyApp extends ConsumerWidget {
           ),
           initialRoute: '/',
           routes: {
-            '/': (context) => _buildHomeWidget(context, ref),
+            '/': (context) => _buildHomeWidget(ref),
             '/login': (context) => const LoginPage(),
             '/home': (context) => const HomeScreen(),
+            '/onboarding': (context) => const OnboardingScreen(),
+            '/user_setup': (context) => const UserSetupScreen(),
+            '/meal_prediction': (context) => const MealPredictionScreen(),
+            '/exercise': (context) => const ExerciseScreen(),
+            '/progress': (context) => const ProgressTrackingScreen(),
+            '/workout_recorder': (context) => const WorkoutRecorderScreen(),
           },
         );
       },
     );
   }
 
-  Widget _buildHomeWidget(BuildContext context, WidgetRef ref) {
+  Widget _buildHomeWidget(WidgetRef ref) {
     final authState = ref.watch(authProvider);
+    final hasCompletedSetup = ref.watch(hasCompletedSetupProvider);
 
     // If checking auth state
     if (authState.status == AuthStatus.initial) {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
 
-    // If authenticated, show home screen
+    // If authenticated, check if profile setup is needed
     if (authState.isAuthenticated) {
+      // Check if user needs to complete setup
+      if (!hasCompletedSetup) {
+        return const UserSetupScreen();
+      }
+
       return const HomeScreen();
     }
 

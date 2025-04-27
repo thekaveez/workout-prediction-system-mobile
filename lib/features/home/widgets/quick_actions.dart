@@ -70,23 +70,35 @@ class QuickActions extends ConsumerWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Quick Actions',
-            style: TextUtils.kSubHeading(
-              context,
-            ).copyWith(fontSize: 20.sp, color: Colors.white),
+          Row(
+            children: [
+              Icon(Icons.flash_on, color: const Color(0xFF00C896), size: 24.sp),
+              SizedBox(width: 8.w),
+              Text(
+                'Quick Actions',
+                style: TextUtils.kSubHeading(context).copyWith(
+                  fontSize: 20.sp,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
           ),
           SizedBox(height: 16.h),
-          SizedBox(
-            height: 120.h,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: actions.length,
-              itemBuilder: (context, index) {
-                final action = actions[index];
-                return _buildQuickActionCard(context, action, ref);
-              },
+          GridView.builder(
+            physics: const NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 16.w,
+              mainAxisSpacing: 16.h,
+              childAspectRatio: 1.6,
             ),
+            itemCount: actions.length,
+            itemBuilder: (context, index) {
+              final action = actions[index];
+              return _buildQuickActionCard(context, action, ref);
+            },
           ),
         ],
       ),
@@ -101,17 +113,22 @@ class QuickActions extends ConsumerWidget {
     return GestureDetector(
       onTap: () => action.onAction(ref),
       child: Container(
-        width: 110.w,
-        margin: EdgeInsets.only(right: 16.w),
-        padding: EdgeInsets.all(16.h),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              action.accentColor.withOpacity(0.15),
+              action.accentColor.withOpacity(0.05),
+            ],
+          ),
           borderRadius: BorderRadius.circular(16.r),
           boxShadow: [
             BoxShadow(
-              color: action.accentColor.withOpacity(0.2),
-              blurRadius: 8,
-              spreadRadius: 1,
+              color: action.accentColor.withOpacity(0.15),
+              blurRadius: 10,
+              spreadRadius: 0,
+              offset: const Offset(0, 2),
             ),
           ],
           border: Border.all(
@@ -124,19 +141,19 @@ class QuickActions extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: EdgeInsets.all(7.h),
+              padding: EdgeInsets.all(10.h),
               decoration: BoxDecoration(
                 color: action.accentColor.withOpacity(0.2),
                 shape: BoxShape.circle,
               ),
-              child: Icon(action.icon, color: action.accentColor, size: 22.sp),
+              child: Icon(action.icon, color: action.accentColor, size: 24.sp),
             ),
-            SizedBox(height: 6.h),
+            SizedBox(height: 8.h),
             Text(
               action.title,
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 12.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.bold,
                 height: 1.2,
               ),

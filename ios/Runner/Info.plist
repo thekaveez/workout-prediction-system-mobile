@@ -47,5 +47,9 @@
 		<true/>
 		<key>UIStatusBarHidden</key>
 		<false/>
+		<key>NSHealthShareUsageDescription</key>
+		<string>We need access to your health data to track your workouts and fitness progress</string>
+		<key>NSHealthUpdateUsageDescription</key>
+		<string>We need permission to save your workouts and fitness data to Apple Health</string>
 	</dict>
 </plist>
