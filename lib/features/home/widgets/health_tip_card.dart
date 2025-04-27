@@ -14,19 +14,27 @@ class HealthTipCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 16.w),
-      padding: EdgeInsets.all(16.h),
+      padding: EdgeInsets.all(20.h),
       decoration: BoxDecoration(
-        color: const Color(0xFF00C896).withOpacity(0.1),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            const Color(0xFFC8C800).withOpacity(0.15),
+            const Color(0xFFC8C800).withOpacity(0.05),
+          ],
+        ),
         borderRadius: BorderRadius.circular(16.r),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF00C896).withOpacity(0.1),
-            blurRadius: 8,
-            spreadRadius: 1,
+            color: const Color(0xFFC8C800).withOpacity(0.1),
+            blurRadius: 10,
+            spreadRadius: 0,
+            offset: const Offset(0, 2),
           ),
         ],
         border: Border.all(
-          color: const Color(0xFF00C896).withOpacity(0.3),
+          color: const Color(0xFFC8C800).withOpacity(0.3),
           width: 1.5,
         ),
       ),
@@ -36,44 +44,66 @@ class HealthTipCard extends StatelessWidget {
           Row(
             children: [
               Container(
-                padding: EdgeInsets.all(8.h),
+                padding: EdgeInsets.all(10.h),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF00C896).withOpacity(0.2),
+                  color: const Color(0xFFC8C800).withOpacity(0.2),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(
                   _getIconData(tip.icon),
-                  color: const Color(0xFF00C896),
-                  size: 16.sp,
+                  color: const Color(0xFFC8C800),
+                  size: 20.sp,
                 ),
               ),
-              SizedBox(width: 12.w),
+              SizedBox(width: 16.w),
               Expanded(
                 child: Text(
                   tip.title,
                   style: TextUtils.kBodyText(context).copyWith(
-                    fontSize: 16.sp,
+                    fontSize: 18.sp,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
                 ),
               ),
               if (onNextTip != null)
-                IconButton(
-                  onPressed: onNextTip,
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                    color: Color(0xFF00C896),
-                    size: 16,
+                Container(
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFC8C800).withOpacity(0.15),
+                    shape: BoxShape.circle,
                   ),
-                  tooltip: 'Next tip',
+                  child: IconButton(
+                    onPressed: onNextTip,
+                    icon: const Icon(
+                      Icons.arrow_forward_ios,
+                      color: Color(0xFFC8C800),
+                      size: 16,
+                    ),
+                    iconSize: 16.sp,
+                    tooltip: 'Next tip',
+                  ),
                 ),
             ],
           ),
-          SizedBox(height: 12.h),
-          Text(
-            tip.description,
-            style: TextStyle(color: Colors.white70, fontSize: 14.sp),
+          SizedBox(height: 16.h),
+          Container(
+            padding: EdgeInsets.all(12.h),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.05),
+              borderRadius: BorderRadius.circular(12.r),
+              border: Border.all(
+                color: const Color(0xFFC8C800).withOpacity(0.1),
+                width: 1,
+              ),
+            ),
+            child: Text(
+              tip.description,
+              style: TextStyle(
+                color: Colors.white.withOpacity(0.85),
+                fontSize: 14.sp,
+                height: 1.5,
+              ),
+            ),
           ),
         ],
       ),
@@ -123,11 +153,23 @@ class _HealthTipsSectionState extends State<HealthTipsSection> {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 16.w),
-          child: Text(
-            'Health Tips',
-            style: TextUtils.kSubHeading(
-              context,
-            ).copyWith(fontSize: 20.sp, color: Colors.white),
+          child: Row(
+            children: [
+              Icon(
+                Icons.lightbulb_outline,
+                color: const Color(0xFFC8C800),
+                size: 24.sp,
+              ),
+              SizedBox(width: 8.w),
+              Text(
+                'Health Tips',
+                style: TextUtils.kSubHeading(context).copyWith(
+                  fontSize: 20.sp,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
           ),
         ),
         SizedBox(height: 16.h),
