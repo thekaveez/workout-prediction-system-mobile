@@ -6,6 +6,10 @@ import 'package:workout_prediction_system_mobile/features/auth/repository/auth_r
 import 'package:workout_prediction_system_mobile/features/home/models/daily_summary.dart';
 import 'package:workout_prediction_system_mobile/features/home/models/health_tip.dart';
 import 'package:workout_prediction_system_mobile/features/home/models/meal_plan.dart';
+import 'package:workout_prediction_system_mobile/features/home/models/water_balance.dart';
+import 'package:workout_prediction_system_mobile/features/progress/models/health_data.dart';
+import 'package:workout_prediction_system_mobile/features/home/providers/water_balance_provider.dart';
+import 'package:workout_prediction_system_mobile/features/progress/providers/health_providers.dart';
 
 part 'home_provider.g.dart';
 
@@ -105,8 +109,27 @@ class Home extends _$Home {
         }
       }
 
-      // Mock data for other parts of the UI
-      final dailySummary = _getMockDailySummary();
+      // Get real water balance data
+      final currentDate = DateTime.now();
+      final waterBalanceAsync = await ref.watch(
+        waterBalanceNotifierProvider.future,
+      );
+      final healthSummaryAsync = await ref.watch(
+        dailyHealthSummaryProvider(currentDate).future,
+      );
+
+      // Create daily summary with real data
+      final dailySummary = DailySummary(
+        caloriesConsumed: healthSummaryAsync.caloriesBurned.toInt(),
+        caloriesGoal: 2000, // Default goal
+        stepsTaken: healthSummaryAsync.steps,
+        stepsGoal: 10000, // Default goal
+        sittingMinutes: 240, // Default value
+        sittingGoalMinutes: 360, // Default goal
+        waterConsumed: waterBalanceAsync.totalWaterConsumed,
+        waterGoal: waterBalanceAsync.waterGoal,
+      );
+
       final mealPlan = _getMockMealPlan();
       final healthTips = _getMockHealthTips();
 
@@ -148,15 +171,25 @@ class Home extends _$Home {
         }
       }
 
-      // In a real app, this would refresh data from a repository
-      // For now, we'll use mock data with slight variations
+      // Get real water balance data and health summary
+      final currentDate = DateTime.now();
+      final waterBalanceAsync = await ref.watch(
+        waterBalanceNotifierProvider.future,
+      );
+      final healthSummaryAsync = await ref.watch(
+        dailyHealthSummaryProvider(currentDate).future,
+      );
+
+      // Create updated daily summary with real data
       final updatedDailySummary = DailySummary(
-        caloriesConsumed: state.dailySummary!.caloriesConsumed + 50,
-        caloriesGoal: state.dailySummary!.caloriesGoal,
-        stepsTaken: state.dailySummary!.stepsTaken + 100,
-        stepsGoal: state.dailySummary!.stepsGoal,
-        sittingMinutes: state.dailySummary!.sittingMinutes + 10,
-        sittingGoalMinutes: state.dailySummary!.sittingGoalMinutes,
+        caloriesConsumed: healthSummaryAsync.caloriesBurned.toInt(),
+        caloriesGoal: 2000, // Default goal
+        stepsTaken: healthSummaryAsync.steps,
+        stepsGoal: 10000, // Default goal
+        sittingMinutes: 240, // Default value
+        sittingGoalMinutes: 360, // Default goal
+        waterConsumed: waterBalanceAsync.totalWaterConsumed,
+        waterGoal: waterBalanceAsync.waterGoal,
       );
 
       state = state.copyWith(

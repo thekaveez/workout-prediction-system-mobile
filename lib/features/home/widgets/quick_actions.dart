@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:workout_prediction_system_mobile/features/home/providers/home_provider.dart';
+import 'package:workout_prediction_system_mobile/features/home/screens/water_balance_screen.dart';
 import 'package:workout_prediction_system_mobile/utils/text_utils.dart';
 
 class QuickActionItem {
@@ -23,7 +24,7 @@ class QuickActions extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final List<QuickActionItem> actions = [
+    final quickActions = [
       QuickActionItem(
         title: 'Log Meal',
         icon: Icons.restaurant_menu,
@@ -32,6 +33,16 @@ class QuickActions extends ConsumerWidget {
           // In a real app, this would navigate to a meal logging screen
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Log Meal feature coming soon!')),
+          );
+        },
+      ),
+      QuickActionItem(
+        title: 'Add Water',
+        icon: Icons.water_drop,
+        accentColor: const Color(0xFF3A86FF),
+        onAction: (_) {
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => const WaterBalanceScreen()),
           );
         },
       ),
@@ -62,6 +73,14 @@ class QuickActions extends ConsumerWidget {
         icon: Icons.lightbulb_outline,
         accentColor: const Color(0xFFFFD166),
         onAction: (ref) => ref.read(homeProvider.notifier).refreshData(),
+      ),
+      QuickActionItem(
+        title: 'Notifications',
+        icon: Icons.notifications_active,
+        accentColor: const Color(0xFFFF6B6B),
+        onAction: (_) {
+          Navigator.of(context).pushNamed('/notification-settings');
+        },
       ),
     ];
 
@@ -94,9 +113,9 @@ class QuickActions extends ConsumerWidget {
               mainAxisSpacing: 16.h,
               childAspectRatio: 1.6,
             ),
-            itemCount: actions.length,
+            itemCount: quickActions.length,
             itemBuilder: (context, index) {
-              final action = actions[index];
+              final action = quickActions[index];
               return _buildQuickActionCard(context, action, ref);
             },
           ),

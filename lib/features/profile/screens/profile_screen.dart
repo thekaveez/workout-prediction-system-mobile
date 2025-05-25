@@ -93,6 +93,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               _buildUserDetailsSection(context, profileState, user),
               const SizedBox(height: 32),
 
+              // Notification settings section
+              _buildNotificationSettingsSection(context),
+              const SizedBox(height: 32),
+
               // Logout button
               ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
@@ -227,6 +231,29 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               style: const TextStyle(color: Colors.red),
             ),
           ),
+      ],
+    );
+  }
+
+  Widget _buildNotificationSettingsSection(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Settings', style: Theme.of(context).textTheme.titleLarge),
+        const SizedBox(height: 16),
+        ListTile(
+          leading: const Icon(Icons.notifications_active),
+          title: const Text('Notification Settings'),
+          subtitle: const Text('Manage your notification preferences'),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: () {
+            Navigator.pushNamed(context, '/notification-settings');
+          },
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+            side: BorderSide(color: Colors.grey[700]!),
+          ),
+        ),
       ],
     );
   }

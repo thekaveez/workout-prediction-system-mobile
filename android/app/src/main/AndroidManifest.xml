@@ -25,6 +25,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             
+            <!-- FCM Intent Filter -->
+            <intent-filter>
+                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
             <!-- Intention to show Permissions screen for Health Connect API -->
             <intent-filter>
                 <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
@@ -49,6 +55,14 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+    
+    <!-- Notification Permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
     
     <!-- Health Connect permissions -->
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>

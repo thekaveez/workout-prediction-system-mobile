@@ -51,5 +51,12 @@
 		<string>We need access to your health data to track your workouts and fitness progress</string>
 		<key>NSHealthUpdateUsageDescription</key>
 		<string>We need permission to save your workouts and fitness data to Apple Health</string>
+		<key>UIBackgroundModes</key>
+		<array>
+			<string>fetch</string>
+			<string>remote-notification</string>
+		</array>
+		<key>NSUserNotificationsUsageDescription</key>
+		<string>We need permission to send you reminders about your workouts and water intake</string>
 	</dict>
 </plist>
