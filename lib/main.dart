@@ -2,11 +2,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:workout_prediction_system_mobile/core/services/notification_service.dart';
 import 'package:workout_prediction_system_mobile/features/auth/providers/auth_provider.dart';
 import 'package:workout_prediction_system_mobile/features/auth/screens/login_page.dart';
 import 'package:workout_prediction_system_mobile/features/exercise/screens/exercise_screen.dart';
 import 'package:workout_prediction_system_mobile/features/home/screens/home_screen.dart';
 import 'package:workout_prediction_system_mobile/features/meal_prediction/screens/meal_prediction_screen.dart';
+import 'package:workout_prediction_system_mobile/features/notifications/screens/notification_settings_screen.dart';
 import 'package:workout_prediction_system_mobile/features/onboarding/screens/onboarding_screen.dart';
 import 'package:workout_prediction_system_mobile/features/progress/screens/progress_tracking_screen.dart';
 import 'package:workout_prediction_system_mobile/features/progress/screens/workout_recorder_screen.dart';
@@ -20,7 +22,11 @@ void main() async {
   // Initialize Firebase
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  runApp(const ProviderScope(child: MyApp()));
+  // Initialize notification service
+  final container = ProviderContainer();
+  await container.read(notificationServiceProvider).initialize();
+
+  runApp(ProviderScope(parent: container, child: const MyApp()));
 }
 
 class MyApp extends ConsumerStatefulWidget {
@@ -59,50 +65,26 @@ class _MyAppState extends ConsumerState<MyApp> {
               error: const Color(0xFFE63946),
             ),
             textSelectionTheme: const TextSelectionThemeData(
-              cursorColor: Color.fromARGB(255, 99, 173, 242),
-              selectionColor: Color.fromARGB(255, 99, 173, 242),
-              selectionHandleColor: Color.fromARGB(255, 99, 173, 242),
+              cursorColor: Color(0xFF63F2C5),
+              selectionColor: Color(0xFF63F2C5),
+              selectionHandleColor: Color(0xFF63F2C5),
             ),
           ),
-          initialRoute: '/',
+          home: const HomeScreen(),
           routes: {
-            '/': (context) => _buildHomeWidget(ref),
-            '/login': (context) => const LoginPage(),
             '/home': (context) => const HomeScreen(),
+            '/login': (context) => const LoginPage(),
             '/onboarding': (context) => const OnboardingScreen(),
-            '/user_setup': (context) => const UserSetupScreen(),
-            '/meal_prediction': (context) => const MealPredictionScreen(),
+            '/user-setup': (context) => const UserSetupScreen(),
             '/exercise': (context) => const ExerciseScreen(),
-            '/progress': (context) => const ProgressTrackingScreen(),
-            '/workout_recorder': (context) => const WorkoutRecorderScreen(),
+            '/meal-prediction': (context) => const MealPredictionScreen(),
+            '/progress-tracking': (context) => const ProgressTrackingScreen(),
+            '/workout-recorder': (context) => const WorkoutRecorderScreen(),
+            '/notification-settings':
+                (context) => const NotificationSettingsScreen(),
           },
         );
       },
     );
-  }
-
-  Widget _buildHomeWidget(WidgetRef ref) {
-    final authState = ref.watch(authProvider);
-    final hasCompletedSetup = ref.watch(hasCompletedSetupProvider);
-
-    // If checking auth state
-    if (authState.status == AuthStatus.initial) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
-    }
-
-    // If authenticated, check if profile setup is needed
-    if (authState.isAuthenticated) {
-      // Check if user needs to complete setup
-      if (!hasCompletedSetup) {
-        return const UserSetupScreen();
-      }
-
-      return const HomeScreen();
-    }
-
-    // Otherwise show onboarding or login
-    // For development, you can directly show the login page
-    return const LoginPage();
-    // return const OnboardingScreen(); // Enable this for production
   }
 }

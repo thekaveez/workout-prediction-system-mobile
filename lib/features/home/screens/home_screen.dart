@@ -11,6 +11,7 @@ import 'package:workout_prediction_system_mobile/features/home/widgets/quick_act
 import 'package:workout_prediction_system_mobile/features/meal_prediction/screens/meal_prediction_screen.dart';
 import 'package:workout_prediction_system_mobile/features/profile/screens/profile_screen.dart';
 import 'package:workout_prediction_system_mobile/features/progress/screens/progress_tracking_screen.dart';
+import 'package:workout_prediction_system_mobile/features/home/screens/water_balance_screen.dart';
 import 'package:workout_prediction_system_mobile/utils/text_utils.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -21,10 +22,13 @@ class HomeScreen extends ConsumerStatefulWidget {
 }
 
 class _HomeScreenState extends ConsumerState<HomeScreen>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   int _currentIndex = 0;
   late AnimationController _animationController;
   late final List<Widget> _screens;
+  late TabController _tabController;
+  final ScrollController _scrollController = ScrollController();
+  bool _showTitle = false;
 
   @override
   void initState() {
@@ -34,6 +38,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
       duration: const Duration(milliseconds: 200),
     );
     _initializeScreens();
+    _tabController = TabController(length: 4, vsync: this);
+
+    // Load initial data
+    Future.microtask(() {
+      ref.read(homeProvider.notifier).initialLoad();
+    });
+
+    // Add scroll listener for app bar title visibility
+    _scrollController.addListener(() {
+      setState(() {
+        _showTitle = _scrollController.offset > 100;
+      });
+    });
   }
 
   void _initializeScreens() {
@@ -58,6 +75,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
   @override
   void dispose() {
     _animationController.dispose();
+    _tabController.dispose();
+    _scrollController.dispose();
     super.dispose();
   }
 
@@ -136,6 +155,13 @@ class _HomeContentState extends ConsumerState<HomeContent> {
   void initState() {
     super.initState();
     Future.microtask(() => ref.read(homeProvider.notifier).initialLoad());
+
+    // Add scroll listener for app bar title visibility
+    _scrollController.addListener(() {
+      setState(() {
+        // Implementation for scroll-based effects if needed
+      });
+    });
   }
 
   @override
@@ -145,9 +171,32 @@ class _HomeContentState extends ConsumerState<HomeContent> {
   }
 
   void _navigateToProfile(BuildContext context) {
-    Navigator.of(
+    Navigator.push(
       context,
-    ).push(MaterialPageRoute(builder: (context) => const ProfileScreen()));
+      MaterialPageRoute(builder: (context) => const ProfileScreen()),
+    );
+  }
+
+  void _navigateToProgressScreen() {
+    final homeNotifier = ref.read(homeProvider.notifier);
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const ProgressTrackingScreen()),
+    ).then((_) {
+      // Refresh data when returning from Progress screen
+      homeNotifier.refreshData();
+    });
+  }
+
+  void _navigateToWaterBalanceScreen() {
+    final homeNotifier = ref.read(homeProvider.notifier);
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const WaterBalanceScreen()),
+    ).then((_) {
+      // Refresh data when returning from Water Balance screen
+      homeNotifier.refreshData();
+    });
   }
 
   void _handleMealCardTap() {
@@ -262,7 +311,11 @@ class _HomeContentState extends ConsumerState<HomeContent> {
           ),
 
           // Daily Summary Cards
-          DailySummaryList(dailySummary: state.dailySummary!),
+          DailySummaryList(
+            dailySummary: state.dailySummary!,
+            onStatsTap: _navigateToProgressScreen,
+            onWaterTap: _navigateToWaterBalanceScreen,
+          ),
 
           // Meal Summary Card
           SizedBox(height: 24.h),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:workout_prediction_system_mobile/features/home/models/daily_summary.dart';
 import 'package:workout_prediction_system_mobile/utils/text_utils.dart';
+import 'package:workout_prediction_system_mobile/features/home/screens/water_balance_screen.dart';
+import 'package:workout_prediction_system_mobile/features/progress/screens/progress_tracking_screen.dart';
 
 class DailySummaryCard extends StatelessWidget {
   final String title;
@@ -10,6 +12,7 @@ class DailySummaryCard extends StatelessWidget {
   final double progress;
   final IconData icon;
   final Color accentColor;
+  final VoidCallback? onTap;
 
   const DailySummaryCard({
     super.key,
@@ -19,106 +22,110 @@ class DailySummaryCard extends StatelessWidget {
     required this.progress,
     required this.icon,
     required this.accentColor,
+    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 165.w,
-      padding: EdgeInsets.all(16.h),
-      margin: EdgeInsets.only(right: 12.w),
-      decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
-        borderRadius: BorderRadius.circular(16.r),
-        boxShadow: [
-          BoxShadow(
-            color: accentColor.withOpacity(0.15),
-            blurRadius: 10,
-            spreadRadius: 0,
-            offset: const Offset(0, 2),
-          ),
-        ],
-        border: Border.all(color: accentColor.withOpacity(0.3), width: 1.5),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                padding: EdgeInsets.all(8.h),
-                decoration: BoxDecoration(
-                  color: accentColor.withOpacity(0.15),
-                  borderRadius: BorderRadius.circular(12.r),
-                ),
-                child: Icon(icon, color: accentColor, size: 20.sp),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
-                decoration: BoxDecoration(
-                  color: accentColor.withOpacity(0.15),
-                  borderRadius: BorderRadius.circular(12.r),
-                ),
-                child: Text(
-                  title,
-                  style: TextStyle(
-                    color: accentColor,
-                    fontSize: 12.sp,
-                    fontWeight: FontWeight.bold,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 165.w,
+        padding: EdgeInsets.all(16.h),
+        margin: EdgeInsets.only(right: 12.w),
+        decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+          borderRadius: BorderRadius.circular(16.r),
+          boxShadow: [
+            BoxShadow(
+              color: accentColor.withOpacity(0.15),
+              blurRadius: 10,
+              spreadRadius: 0,
+              offset: const Offset(0, 2),
+            ),
+          ],
+          border: Border.all(color: accentColor.withOpacity(0.3), width: 1.5),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(8.h),
+                  decoration: BoxDecoration(
+                    color: accentColor.withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(12.r),
                   ),
+                  child: Icon(icon, color: accentColor, size: 20.sp),
                 ),
-              ),
-            ],
-          ),
-          SizedBox(height: 16.h),
-          Text(
-            value,
-            style: TextUtils.kSubHeading(context).copyWith(
-              fontSize: 22.sp,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          if (subtitle != null)
-            Text(
-              subtitle!,
-              style: TextStyle(color: Colors.white70, fontSize: 12.sp),
-            ),
-          SizedBox(height: 16.h),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    '${(progress * 100).toInt()}%',
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
+                  decoration: BoxDecoration(
+                    color: accentColor.withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(12.r),
+                  ),
+                  child: Text(
+                    title,
                     style: TextStyle(
                       color: accentColor,
                       fontSize: 12.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Text(
-                    'Goal',
-                    style: TextStyle(color: Colors.white60, fontSize: 11.sp),
-                  ),
-                ],
-              ),
-              SizedBox(height: 6.h),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(8.r),
-                child: LinearProgressIndicator(
-                  value: progress,
-                  backgroundColor: Colors.white.withOpacity(0.1),
-                  valueColor: AlwaysStoppedAnimation<Color>(accentColor),
-                  minHeight: 8.h,
                 ),
+              ],
+            ),
+            SizedBox(height: 16.h),
+            Text(
+              value,
+              style: TextUtils.kSubHeading(context).copyWith(
+                fontSize: 22.sp,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
               ),
-            ],
-          ),
-        ],
+            ),
+            if (subtitle != null)
+              Text(
+                subtitle!,
+                style: TextStyle(color: Colors.white70, fontSize: 12.sp),
+              ),
+            SizedBox(height: 16.h),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      '${(progress * 100).toInt()}%',
+                      style: TextStyle(
+                        color: accentColor,
+                        fontSize: 12.sp,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      'Goal',
+                      style: TextStyle(color: Colors.white60, fontSize: 11.sp),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 6.h),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(8.r),
+                  child: LinearProgressIndicator(
+                    value: progress,
+                    backgroundColor: Colors.white.withOpacity(0.1),
+                    valueColor: AlwaysStoppedAnimation<Color>(accentColor),
+                    minHeight: 8.h,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -126,8 +133,15 @@ class DailySummaryCard extends StatelessWidget {
 
 class DailySummaryList extends StatelessWidget {
   final DailySummary dailySummary;
+  final VoidCallback? onWaterTap;
+  final VoidCallback? onStatsTap;
 
-  const DailySummaryList({super.key, required this.dailySummary});
+  const DailySummaryList({
+    super.key,
+    required this.dailySummary,
+    this.onWaterTap,
+    this.onStatsTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -146,6 +160,7 @@ class DailySummaryList extends StatelessWidget {
             progress: dailySummary.caloriesProgress,
             icon: Icons.local_fire_department_outlined,
             accentColor: const Color(0xFFFF6B6B),
+            onTap: onStatsTap,
           ),
 
           // Steps Card
@@ -156,6 +171,7 @@ class DailySummaryList extends StatelessWidget {
             progress: dailySummary.stepsProgress,
             icon: Icons.directions_walk_outlined,
             accentColor: const Color(0xFF4ECDC4),
+            onTap: onStatsTap,
           ),
 
           // Sitting Time Card
@@ -171,11 +187,12 @@ class DailySummaryList extends StatelessWidget {
           // Water Intake Card
           DailySummaryCard(
             title: 'Water',
-            value: '1.2 L',
-            subtitle: 'of 2.5 L goal',
-            progress: 0.48,
+            value: dailySummary.formattedWaterConsumed,
+            subtitle: 'of ${dailySummary.formattedWaterGoal}',
+            progress: dailySummary.waterProgress,
             icon: Icons.water_drop_outlined,
             accentColor: const Color(0xFF3A86FF),
+            onTap: onWaterTap,
           ),
         ],
       ),

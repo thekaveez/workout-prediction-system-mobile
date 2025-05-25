@@ -46,8 +46,11 @@ dependencies:
   intl: ^0.19.0 # For date formatting
   firebase_core: ^2.25.4 # Firebase Core
   firebase_auth: ^4.17.5 # Firebase Authentication
-  cloud_firestore: ^4.15.5 # Firestore
+  cloud_firestore: ^4.15.5 # Firebase Storage
   firebase_storage: ^11.6.6 # Firebase Storage
+  firebase_messaging: ^14.7.16 # Firebase Cloud Messaging
+  flutter_local_notifications: ^19.2.1 # Local notifications
+  timezone: ^0.10.1 # For handling timezones in notifications
   connectivity_plus: ^5.0.2 # Network connectivity
   image_picker: ^1.0.7 # For picking profile pictures
   http: ^1.1.0 # For API requests
@@ -56,6 +59,7 @@ dependencies:
   url_launcher: ^6.2.5 # For launching URLs (like Play Store)
   video_player: ^2.8.2
   youtube_player_flutter: ^9.0.0
+  shared_preferences: ^2.2.2 # For persisting local data
 
 dev_dependencies:
   flutter_test:
