@@ -121,9 +121,10 @@ class Auth extends _$Auth {
     // Initialize auth state listener
     _authSubscription = repository.authStateChanges.listen(_handleAuthChange);
 
-    // Check current auth state
+    // Check current auth state immediately
     _checkAuthStatus();
 
+    // Return initial state while checking
     return AuthState.initial();
   }
 
@@ -137,15 +138,28 @@ class Auth extends _$Auth {
           state = state.copyWith(
             status: AuthStatus.authenticated,
             user: userData,
+            errorMessage: null,
           );
         } else {
-          state = state.copyWith(status: AuthStatus.unauthenticated);
+          state = state.copyWith(
+            status: AuthStatus.unauthenticated,
+            user: null,
+            errorMessage: null,
+          );
         }
-      } catch (_) {
-        state = state.copyWith(status: AuthStatus.unauthenticated);
+      } catch (e) {
+        state = state.copyWith(
+          status: AuthStatus.unauthenticated,
+          user: null,
+          errorMessage: e.toString(),
+        );
       }
     } else {
-      state = state.copyWith(status: AuthStatus.unauthenticated, user: null);
+      state = state.copyWith(
+        status: AuthStatus.unauthenticated,
+        user: null,
+        errorMessage: null,
+      );
     }
   }
 
@@ -160,15 +174,28 @@ class Auth extends _$Auth {
           state = state.copyWith(
             status: AuthStatus.authenticated,
             user: userData,
+            errorMessage: null,
           );
         } else {
-          state = state.copyWith(status: AuthStatus.unauthenticated);
+          state = state.copyWith(
+            status: AuthStatus.unauthenticated,
+            user: null,
+            errorMessage: null,
+          );
         }
-      } catch (_) {
-        state = state.copyWith(status: AuthStatus.unauthenticated);
+      } catch (e) {
+        state = state.copyWith(
+          status: AuthStatus.unauthenticated,
+          user: null,
+          errorMessage: e.toString(),
+        );
       }
     } else {
-      state = state.copyWith(status: AuthStatus.unauthenticated);
+      state = state.copyWith(
+        status: AuthStatus.unauthenticated,
+        user: null,
+        errorMessage: null,
+      );
     }
   }
 

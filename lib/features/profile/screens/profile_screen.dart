@@ -4,6 +4,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:workout_prediction_system_mobile/features/auth/providers/auth_provider.dart';
 import 'package:workout_prediction_system_mobile/features/profile/providers/profile_provider.dart';
+import 'package:workout_prediction_system_mobile/core/services/notification_service.dart';
+import 'package:workout_prediction_system_mobile/utils/helpers.dart';
+import 'package:workout_prediction_system_mobile/features/auth/screens/login_page.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ProfileScreen extends ConsumerStatefulWidget {
   const ProfileScreen({super.key});
@@ -106,14 +110,17 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                 ),
                 icon: const Icon(Icons.logout),
                 label: const Text('Logout'),
-                onPressed: () {
-                  // Sign out using profile provider
-                  ref.read(profileProvider.notifier).signOut();
+                onPressed: () async {
+                  // Sign out using auth provider directly
+                  await ref.read(authProvider.notifier).signOut();
 
-                  // Navigate back to the login page and clear all routes
-                  Navigator.of(
-                    context,
-                  ).pushNamedAndRemoveUntil('/', (route) => false);
+                  if (mounted) {
+                    // Navigate to login page and clear all routes
+                    Navigator.of(context).pushAndRemoveUntil(
+                      Helpers.routeNavigation(context, const LoginPage()),
+                      (route) => false,
+                    );
+                  }
                 },
               ),
             ],
@@ -254,6 +261,39 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             side: BorderSide(color: Colors.grey[700]!),
           ),
         ),
+        const SizedBox(height: 16),
+        // ListTile(
+        //   leading: const Icon(Icons.timer),
+        //   title: const Text('Test Scheduled Notification'),
+        //   subtitle: const Text('Send a test notification in 10 seconds'),
+        //   onTap: () {
+        //     // Schedule a test notification for 10 seconds from now
+        //     final scheduledTime = DateTime.now().add(
+        //       const Duration(seconds: 10),
+        //     );
+        //     ref
+        //         .read(notificationServiceProvider)
+        //         .scheduleExerciseReminder(
+        //           title: 'Test Scheduled Notification',
+        //           body: 'This is a test scheduled notification!',
+        //           scheduledTime: scheduledTime,
+        //         );
+
+        //     // Show confirmation snackbar
+        //     ScaffoldMessenger.of(context).showSnackBar(
+        //       const SnackBar(
+        //         content: Text(
+        //           'Test notification scheduled for 10 seconds from now',
+        //         ),
+        //         duration: Duration(seconds: 2),
+        //       ),
+        //     );
+        //   },
+        //   shape: RoundedRectangleBorder(
+        //     borderRadius: BorderRadius.circular(12),
+        //     side: BorderSide(color: Colors.grey[700]!),
+        //   ),
+        // ),
       ],
     );
   }
