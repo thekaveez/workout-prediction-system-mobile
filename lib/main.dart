@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:workout_prediction_system_mobile/core/services/notification_service.dart';
 import 'package:workout_prediction_system_mobile/features/auth/providers/auth_provider.dart';
+import 'package:workout_prediction_system_mobile/features/auth/screens/auth_wrapper.dart';
 import 'package:workout_prediction_system_mobile/features/auth/screens/login_page.dart';
 import 'package:workout_prediction_system_mobile/features/exercise/screens/exercise_screen.dart';
 import 'package:workout_prediction_system_mobile/features/home/screens/home_screen.dart';
@@ -70,7 +71,7 @@ class _MyAppState extends ConsumerState<MyApp> {
               selectionHandleColor: Color(0xFF63F2C5),
             ),
           ),
-          home: const HomeScreen(),
+          home: const AuthWrapper(),
           routes: {
             '/home': (context) => const HomeScreen(),
             '/login': (context) => const LoginPage(),
